@@ -1,0 +1,65 @@
+<footer class="ms-footer">
+    <div class="container">
+        <div class="ms-footer__flex">
+            <nav class="ms-footer__socialmedia">
+                <ul>
+                    <li><a href="https://github.com/mscharl"
+                           title="My work on Github"
+                           class="ms-footer__socialmedia__link">
+                        <i class="fa fa-fw fa-github"></i>
+                        Github
+                    </a></li>
+                    <li><a href="https://twitter.com/m_scharl"
+                           title="Me on Twitter"
+                           class="ms-footer__socialmedia__link">
+                        <i class="fa fa-fw fa-twitter"></i>
+                        Twitter
+                    </a></li>
+                    <li><a href="https://codepen.io/mscharl"
+                           title="Showcases on Codepen"
+                           class="ms-footer__socialmedia__link">
+                        <i class="fa fa-fw fa-codepen"></i>
+                        Codepen
+                    </a></li>
+                </ul>
+            </nav>
+
+            {{!--
+            I understand if you want to remove the next four lines
+            but keep in mind that a lot of effort was put into making this Theme and
+            Ghost! I think it doesn't hurt to put two small links into a websites
+            footer to support the makers.
+
+            If you modify the theme to fit your needs you might remove the theme credit
+            since it's not the same anymore.
+            But a small mention like "Based on a Theme by <a href="https://michael.scharl.me">Michael Scharl</a>"
+            would be nice ;)
+            --}}
+            <section class="ms-footer__powered">
+                Theme by <a href="https://michael.scharl.me/">Michael Scharl</a> &copy; {{date format="YYYY"}}<br>
+                Proudly published with <a href="https://ghost.org">Ghost</a>
+            </section>
+        </div>
+
+    </div>
+</footer>
+
+<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700|Source+Sans+Pro:300,700'
+      rel='stylesheet'
+      type='text/css'>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+{{!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">--}}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/themes/prism.css">
+
+{{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+{{! <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> }}
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+{{! The main JavaScript file for Casper }}
+{{!-- <script type="text/javascript" src="{{asset "js/index.js"}}"></script> --}}
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"
+        async
+        defer
+        onload="Prism.highlightAll()"></script>

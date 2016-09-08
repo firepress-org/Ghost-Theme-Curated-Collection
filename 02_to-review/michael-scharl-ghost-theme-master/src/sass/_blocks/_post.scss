@@ -1,0 +1,40 @@
+.ms-post {
+    font-size: 1.6rem;
+    margin: 0 0 3em;
+
+    &__title {
+        font-size: $font-size-h1 * 1.2;
+        margin: 1.5em 0 0;
+    }
+
+    &__header {
+        margin-bottom: 1.6em;
+    }
+
+    &__content {
+        margin: 0 0 5em;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__meta {
+        color: mix(white, $text-color, 75%);
+}
+
+    &__footer {
+        border-top: 1px solid rgba($text-color, .1);
+
+        margin: 3em 0 1.8em;
+        padding: 1em 0 0.625em;
+
+    }
+
+    .container {
+        @media (min-width: $screen-lg-min) {
+            width: $container-md;
+        }
+    }
+}

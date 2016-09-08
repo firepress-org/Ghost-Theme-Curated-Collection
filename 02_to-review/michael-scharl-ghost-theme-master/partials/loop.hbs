@@ -1,0 +1,48 @@
+<section class="ms-loop">
+    <div class="container">
+
+        {{! This is the post loop - each post will be output using this markup }}
+        {{#foreach posts}}
+            <article class="ms-teaser {{post_class}}">
+                <a class="ms-link-unstyled" href="{{ url absolute=true}}">
+                    <header class="ms-teaser__header">
+                        <h2 class="ms-teaser__title">
+                            {{{title}}}
+                        </h2>
+                        <div class="ms-teaser__meta">
+                            <time class="ms-teaser__meta__time"
+                                  datetime="{{date format='YYYY-MM-DD'}}">{{date timeago="true"}}</time>
+                        </div>
+                    </header>
+                    <section class="ms-teaser__excerpt">
+                        <p>{{excerpt words="125"}}</p>
+                    </section>
+                    <div class="ms-teaser__meta">
+                        <p class="ms-teaser__meta__more">
+                            <i class="fa fa-angle-double-right"></i>
+                            Alles lesen
+                        </p>
+                    </div>
+                </a>
+
+                <footer class="ms-teaser__footer">
+                    <div class="ms-teaser__meta">
+                        {{!--
+                        {{#if author.image}}
+                        <img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin"/>
+                        {{/if}}
+                        --}}
+
+                        {{!-- {{author}} --}}
+                        {{#if tags}}
+                            {{> taglist right=true}}
+                        {{/if}}
+                    </div>
+                </footer>
+            </article>
+        {{/foreach}}
+
+        {{! Previous/next page links - displayed on every page }}
+        {{pagination}}
+    </div>
+</section>

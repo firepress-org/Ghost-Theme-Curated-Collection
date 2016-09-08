@@ -1,0 +1,113 @@
+/*******************************************************************************
+ *
+ * Helpful Mixin for cleaner Media Queries Usage
+ *
+ * Variables:
+ *
+ *  $breakpoint: xs, sm, xs, lg
+ *  $direction: min, max
+ *
+ * @Usage: @include Media(md, max) - for Break on md- Breakpoint max-width
+ *
+ ******************************************************************************/
+
+$xs: $screen-xs;
+$sm: $screen-sm;
+$md: $screen-md;
+$lg: $screen-lg;
+
+@mixin Media($breakpoint, $direction: min) {
+
+    @if $breakpoint == xs {
+
+        @if $direction == max {
+            @media only screen and (max-width: $screen-xs-max) { @content; }
+        }
+        @else {
+            @media only screen and (min-width: $screen-xs-min) { @content; }
+
+        }
+    }
+    @else if $breakpoint == sm {
+
+        @if $direction == max {
+            @media only screen and (max-width: $screen-sm-max) { @content; }
+        }
+        @else {
+            @media only screen and (min-width: $screen-sm-min) { @content; }
+
+        }
+    }
+    @else if $breakpoint == md {
+
+        @if $direction == max {
+            @media only screen and (max-width: $screen-md-max) { @content; }
+        }
+        @else {
+            @media only screen and (min-width: $screen-md-min) { @content; }
+
+        }
+    }
+    @else if $breakpoint == lg {
+
+        @if $direction == max {
+            @media only screen and (max-width: $screen-lg-min) { @content; }
+        }
+        @else {
+            @media only screen and (min-width: $screen-lg) { @content; }
+
+        }
+    }
+} // End Media
+
+/*******************************************************************************
+ *
+ * Mixin Aliases for faster Use
+ *
+ ******************************************************************************/
+
+/*------------------------------------------------------*\
+     Media Queries
+\*------------------------------------------------------*/
+
+@mixin xsmin() {
+    @include Media(xs, min) {
+        @content
+    }
+}
+
+@mixin smmin() {
+    @include Media(sm, min) {
+        @content
+    }
+}
+
+@mixin mdmin() {
+    @include Media(md, min) {
+        @content
+    }
+}
+
+@mixin lgmin() {
+    @include Media(lg, min) {
+        @content
+    }
+}
+
+@mixin xsmax() {
+    @include Media(xs, max) {
+        @content
+    }
+}
+
+@mixin smmax() {
+    @include Media(sm, max) {
+        @content
+    }
+}
+
+@mixin mdmax() {
+    @include Media(sm, max) {
+        @content
+    }
+}

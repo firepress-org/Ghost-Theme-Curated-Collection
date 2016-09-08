@@ -1,0 +1,20 @@
+{{#foreach posts}}
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <div class="post-meta">
+                    {{#if author.image}}<img src="{{author.image}}" alt="{{author.name}}" class="author-thumb">{{/if}}
+                    {{author}}
+                    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="DD MMMM YYYY"}}</time>
+                </div>
+            </header>
+            <section class="post-excerpt">
+                <p>{{content}}</p>
+            </section>
+            <a class="read-more" href="{{url}}" style="display:none">Read more ...</a>
+        </div>
+    </div>
+{{/foreach}}
+
+{{pagination}}

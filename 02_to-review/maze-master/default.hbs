@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/robotofonts.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/iconfonts.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap-material-design.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/ripples.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/audioPlayer.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <header>
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">{{@blog.title}}</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                    {{navigation}}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{{body}}}
+
+    <footer {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+        <div class="container">
+            <div class="copyright">
+                &copy; {{date format="YYYY"}}
+                &nbsp; {{@blog.title}}
+            </div>
+            <div class="powered-by">
+                Powered by <a href="https://ghost.org/">Ghost</a>
+            </div>
+            <div class="theme-info"><a href="javascript:void(0)">Maze</a> made with &#10084; by fuyumi</div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
+
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/material.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/ripples.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/audioPlayer.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+</body>
+</html>

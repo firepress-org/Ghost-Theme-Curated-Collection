@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        {{#foreach posts}}
+        <header class="list-header">
+            <time class="list-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            <h4 class="list-title"><a href="{{url}}">{{{title}}}</a></h4>
+        </header>
+        {{/foreach}}
+    </div>
+</div>
+
+{{pagination}}

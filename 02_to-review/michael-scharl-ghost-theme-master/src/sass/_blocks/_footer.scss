@@ -1,0 +1,38 @@
+.ms-footer {
+    background-color: $text-color;
+    color: mix($text-color, $body-bg, 50%);
+
+    font-size: 1.4rem;
+
+    box-shadow: inset 0px 1px 2px rgba(black, .625);
+
+    padding: 5em 0 3.125em;
+
+    a {
+        &, &:active, &:link {
+            color: inherit;
+        }
+
+        &:hover, &:active {
+            color: mix($text-color, $body-bg, 30%);
+        }
+    }
+
+    hr {
+        margin: 1.6em 0;
+        border-top: 1px solid mix($text-color, $body-bg, 90%);
+    }
+
+    &__powered {
+        font-size: 1rem;
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+}

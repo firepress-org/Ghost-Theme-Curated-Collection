@@ -1,0 +1,7 @@
+<ul class="ms-tag-list {{#if right}}ms-tag-list--right{{else}}ms-tag-list--left{{/if}}">
+    {{#foreach tags}}
+        <li><a href="{{ url }}" title="Alle Inhalte zum Thema '{{ name }}'" class="ms-tag-list__tag ms-tag-list__tag--{{ id }}">
+            {{ name }}
+        </a></li>
+    {{/foreach}}
+</ul>

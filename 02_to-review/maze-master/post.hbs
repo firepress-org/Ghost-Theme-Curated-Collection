@@ -1,0 +1,67 @@
+{{!< default}}
+
+{{#post}}
+<div class="main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default content-wrap">
+                    <div class="panel-body">
+                        <header class="content-header">
+                            <h1 class="post-title">{{title}}</h1>
+                            <div class="post-meta">
+                                {{#if author.image}}<img src="{{author.image}}" alt="{{author.name}}" class="author-thumb">{{/if}}
+                                {{author}}
+                                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">Posted on {{date format="DD MMMM YYYY"}}</time>
+                            </div>
+                        </header>
+                        <section class="post-content">
+                            <p>{{content}}</p>
+                        </section>
+                        {{#if tags}}
+                        <div class="tags">
+                            {{#foreach tags}}
+                                <a class="label label-info tag-{{id}}" href="{{url}}" title="{{name}}">#{{name}}</a>
+                            {{/foreach}}
+                        </div>
+                        {{/if}}
+                        <div class="post-nav">
+                            {{#prev_post}}
+                            <a class="prev-post" href="{{url}}">&lt;&nbsp;{{title}}</a>
+                            {{/prev_post}}
+
+                            {{#next_post}}
+                            <a class="next-post" href="{{url}}">{{title}}&nbsp;&gt;</a>
+                            {{/next_post}}
+                        </div>
+                        <div class="post-share">
+                            <div class="ds-share flat" data-thread-key="{{slug}}" data-title="{{title}}" data-url="{{url absolute="true"}}">
+                                <div class="ds-share-inline">
+                                    <ul  class="ds-share-icons-16">
+                                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+                                        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                                        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+                                        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+                                        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                                    </ul>
+                                    <div class="ds-share-icons-more"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default context-comments">
+                    <div class="panel-body">
+                        <div class="comments">
+                            <h2>Comments</h2>
+                            <div class="ds-thread" data-thread-key="{{slug}}" data-title="{{title}}" data-url="{{url absolute="true"}}"></div>
+                            <div id="disqus_thread"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/post}}

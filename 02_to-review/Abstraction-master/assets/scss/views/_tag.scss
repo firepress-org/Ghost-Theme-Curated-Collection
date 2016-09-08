@@ -1,0 +1,13 @@
+// ========= Tag =========
+
+.tag-header {
+  word-break: break-word;
+  hyphens: auto;
+  margin: 4em auto;
+  width: 90%;
+  max-width: em-calc(700);
+
+  @media #{$small} {
+    width: 80%;
+  }
+}

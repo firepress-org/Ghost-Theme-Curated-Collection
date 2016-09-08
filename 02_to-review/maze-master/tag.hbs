@@ -1,0 +1,29 @@
+{{!< default}}
+
+<div class="tag-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner tag-inner">
+                    <h1 class="tag-title">{{tag.name}}</h2>
+                    <h2 class="tag-description">
+                        {{#if tag.description}}
+                            {{tag.description}}
+                        {{else}}
+                            A {{pagination.total}}-post collection
+                        {{/if}}
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-md-12">
+            {{> "list-post"}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{meta_description}}">
+    <meta name="homepage" content="{{@blog.url}}{{url}}">
+    <meta name="author" content="{{author.name}}">
+    <meta itemprop="name" content="{{meta_title}}">
+    <meta itemprop="description" content="{{meta_description}}">
+    <meta itemprop="image" content="{{@blog.url}}{{#if post.image}}{{post.image}}{{else}}{{@blog.cover}}{{/if}}">
+
+    <!-- OpenGraph metadata -->
+    <meta property="og:site_name" content="{{@blog.title}}">
+    <meta property="og:title" content="{{meta_title}}">
+    <meta property="og:url" content="{{@blog.url}}{{url}}">
+    <meta property="og:creator" content="{{author.name}}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{@blog.url}}{{#if post.image}}{{post.image}}{{else}}{{@blog.cover}}{{/if}}">
+    <meta property="og:description" content="{{meta_description}}">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{@blog.title}}">
+    <meta name="twitter:creator" content="{{author.name}}">
+    <meta name="twitter:url" content="{{@blog.url}}{{url}}">
+    <meta name="twitter:title" content="{{meta_title}}">
+    <meta name="twitter:description" content="{{meta_description}}">
+    <meta name="twitter:image" content="{{@blog.url}}{{#if post.image}}{{post.image}}{{else}}{{@blog.cover}}{{/if}}">
+    <meta name="twitter:image:src" content="{{@blog.url}}{{#if post.image}}{{post.image}}{{else}}{{@blog.cover}}{{/if}}">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="google-site-verification" content="sZXLTkVPySdPUfQY6WDJwOOvDcYh1t8KKm7Oi6vbKxw">
+
+    <title>{{meta_title}}</title>
+    <link rel="icon" href="/favicon.ico" sizes="16x16">
+    <link rel="shortcut icon" href="{{asset "brand/icon-16.png"}}" type="image/x-icon">
+    <link rel="canonical" href="{{canonical}}">
+    <link rel="alternate" type="application/rss+xml" href="{{@blog.url}}/rss" title="{{@blog.title}} - RSS">
+
+    <script type="text/javascript" src="{{asset "components/webcomponentsjs/webcomponents-lite.min.js"}}"></script>
+    <link rel="import" href="{{asset "components/core-header-panel/core-header-panel.html"}}">
+    <link rel="import" href="{{asset "components/core-toolbar/core-toolbar.html"}}">
+    <link rel="import" href="{{asset "components/core-icon-button/core-icon-button.html"}}">
+    <link rel="import" href="{{asset "components/core-item/core-item.html"}}">
+    <link rel="import" href="{{asset "components/paper-icon-button/paper-icon-button.html"}}">
+    <link rel="import" href="{{asset "components/paper-shadow/paper-shadow.html"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/default.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/fonts.css"}}">
+  </head>
+  <body unresolved>
+      <core-header-panel>
+          <core-toolbar>
+              <a flex class="site-logo" title="{{@blog.title}}" href="{{@blog.url}}" style="background-image: url({{@blog.logo}});">
+                  <span class="site-logo-text">{{@blog.title}}</span>
+              </a>
+              <core-item label="Help" class="header-icon"><a href="{{@blog.url}}/help" target="_self"></a></core-item>
+              |
+              <core-item label="RSS" class="header-icon"><a href="{{@blog.url}}/rss" target="_blank"></a></core-item>
+          </core-toolbar>
+          <div class="outer">
+
+              {{{body}}}
+
+                <p class="footer-copyright">
+                    <a href="{{@blog.url}}">{{@blog.title}}</a> - Created by <a href="https://plus.google.com/+DongNguyenbellajs/about" target="_blank">Dong Nguyen</a>
+                </p>
+          </div>
+      </core-header-panel>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-28010152-14', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+      <script type="text/javascript" ping="{{asset "js/main"}}" src="{{asset "js/libs/bella.js"}}"></script>
+  </body>
+</html>

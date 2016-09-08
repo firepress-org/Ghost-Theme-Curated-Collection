@@ -1,0 +1,10 @@
+<ul class="nav navbar-nav">
+    {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation">
+            <a href="{{url absolute="true"}}">{{label}}</a>
+        </li>
+    {{/foreach}}
+</ul>
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="{{@blog.url}}/ghost">Login</a></li>
+</ul>

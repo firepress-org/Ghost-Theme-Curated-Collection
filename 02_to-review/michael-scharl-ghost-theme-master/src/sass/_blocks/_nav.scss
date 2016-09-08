@@ -1,0 +1,115 @@
+.ms-nav {
+    //font-family: $font-family-sans-serif;
+    font-size: 1.6rem;
+
+    &__list {
+        position: relative;
+        display: block;
+        text-align: right;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        border-bottom: 1px solid rgba($text-color, .1);
+    }
+
+    &__item {
+        $padding-base: 2em;
+        $padding-bottom: $padding-base * .375;
+        $padding-side: $padding-base * .625;
+
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        a {
+            position: relative;
+            display: inline-block;
+
+            padding: $padding-base $padding-side $padding-bottom;
+            line-height: 1;
+
+            text-decoration: none;
+
+            color: $text-color;
+
+            span {
+                display: inline-block;
+                transition: transform .2s;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: $padding-side * .625;
+                right: $padding-side * .625;
+                bottom: -1px;
+                opacity: 0;
+
+                border-bottom: 0px solid $brand-primary;
+                transition: border .1s, opacity .2s;
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 1;
+                    border-bottom-width: 3px;
+                }
+                span {
+                    transform: translateY(#{$padding-bottom * .375});
+                }
+            }
+        }
+        &#{&}--current a {
+
+            &:after {
+                opacity: 1;
+                border-bottom-width: 1px;
+            }
+
+            span {
+                transform: translateY(0);
+            }
+        }
+
+        &--text-logo {
+            position: absolute;
+            left: $padding-side;
+            bottom: 0;
+            //height: 125%;
+            height: 75%;
+
+            transform: translateY(35%);
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        &--logo {
+            position: absolute;
+            top: 62.5%;
+            left: $padding-side;
+
+            height: 50%;
+            transform: translateY(-62.5%);
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+
+            a {
+                display: inline-block;
+                height: 100%;
+                padding: 0;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

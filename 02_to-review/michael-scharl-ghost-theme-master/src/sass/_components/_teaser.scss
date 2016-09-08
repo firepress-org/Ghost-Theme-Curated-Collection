@@ -1,0 +1,34 @@
+.ms-teaser {
+
+    font-size: 1.8rem;
+
+    background-color: white;
+    border: 1px solid rgba($text-color, .1);
+    box-shadow: 0 1px 4px rgba(black, .04);
+
+    margin-bottom: 2.8em;
+    padding: 1em 1em 0;
+
+    &__title {
+        font-size: 2.8em;
+        margin: 0;
+    }
+
+    &__header {
+        margin-bottom: 1em;
+    }
+
+    &__footer {
+        margin: 1em -1em 0;
+        padding: .625em 1em;
+
+        border-top: 1px solid rgba($text-color, .1);
+    }
+
+    &__meta {
+        font-size: .75em;
+        color: lighten($text-color, 50%);
+
+        @include clearfix;
+    }
+}

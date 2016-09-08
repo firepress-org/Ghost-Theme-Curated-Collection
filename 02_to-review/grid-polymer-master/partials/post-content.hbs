@@ -1,0 +1,17 @@
+<article class="post-container {{post_class}}">
+    <header class="post-header">
+        <h1 class="post-title">{{title}}</h1>
+    </header>
+
+    <div class="post-content clearfix">
+        {{{content}}}
+    </div>
+
+    <footer class="post-footer clearfix">
+        <div class="social-shares" data-url="{{@blog.url}}{{url}}" data-text="{{title}}"></div>
+        <section class="comment">
+            <div class="g-comments" style="width: 800px;" data-href="{{@blog.url}}{{url}}" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">Loading Google+ Comments ...</div>
+            <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
+        </section>
+    </footer>
+</article>

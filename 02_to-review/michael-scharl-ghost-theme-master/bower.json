@@ -1,0 +1,7 @@
+{
+    "name": "michael-scharl-ghost-theme",
+    "dependencies": {
+        "bootstrap": "^3.3.6",
+        "font-awesome": "fontawesome#^4.6.1"
+    }
+}

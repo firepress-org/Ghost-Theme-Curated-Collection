@@ -1,0 +1,76 @@
+.ms-recommend {
+    font-size: 1.8rem;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: center;
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
+
+        padding: 6.25em 3.75em;
+
+        color: white;
+        overflow: hidden;
+        background-color: $text-color;
+
+        &:hover {
+            text-decoration: none;
+            color: white;
+
+            &:before {
+                background-color: $text-color;
+                opacity: .625;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+
+            display: block;
+            content: '';
+            background-color: $text-color;
+            opacity: .8;
+            transition: opacity .125s;
+        }
+
+        &__image {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            transition: transform .2s, filter .2s;
+            transform: scale(1);
+            filter: blur(2px);
+            will-change: transform;
+        }
+
+        &:hover &__image {
+            transform: scale(1.05);
+            filter: blur(0);
+        }
+    }
+
+    &__post {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+}

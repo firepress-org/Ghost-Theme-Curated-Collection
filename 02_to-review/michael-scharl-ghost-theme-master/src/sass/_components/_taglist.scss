@@ -1,0 +1,37 @@
+.ms-tag-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        margin: 0;
+        padding: 0 .625em 0 0;
+        display: inline-block;
+    }
+
+    &--right {
+        text-align: right;
+    }
+    &--right > li {
+        padding: 0 0 0 .625em;
+    }
+
+    &__tag {
+        display: inline-block;
+
+        font-family: $font-family-sans-serif;
+        font-weight: 300;
+
+        background-color: darken($body-bg, 5%);
+        color: lighten($text-color, 25%);
+
+        padding: .375em .625em;
+        border-radius: .234em;
+
+        &:hover {
+            color: lighten($text-color, 25%);
+            background-color: darken($body-bg, 3%);
+            text-decoration: none;
+        }
+    }
+}

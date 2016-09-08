@@ -1,0 +1,19 @@
+<nav class="ms-pagination" role="navigation">
+    {{#if prev}}
+        <a class="ms-pagination__link ms-pagination__link--newer" href="{{page_url prev}}" title="Aktuellere Posts">
+            <i class="fa fa-chevron-left"></i>
+            Zurück
+        </a>
+    {{ else }}
+        <div class="ms-pagination__link ms-pagination__link--newer"></div>
+    {{/if}}
+    <span class="page-number">Seite {{page}} von {{pages}}</span>
+    {{#if next}}
+        <a class="ms-pagination__link ms-pagination__link--older" href="{{page_url next}}" title="Ältere Posts">
+            Weiter
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    {{ else }}
+        <div class="ms-pagination__link ms-pagination__link--older"></div>
+    {{/if}}
+</nav>

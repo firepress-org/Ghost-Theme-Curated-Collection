@@ -1,0 +1,28 @@
+<div class="form-group label-floating searchbar">
+    <label for="search" class="control-label">Search</label>
+    <div class="input-group">
+        <input type="text" class="form-control st-default-search-input">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-fab btn-fab-mini">
+                <i class="material-icons">search</i>
+            </button>
+        </span>
+    </div>
+</div>
+
+
+{{#get "posts" limit="10" as |recents|}}
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Recent Posts</h3>
+    </div>
+    <div class="recent-postlist">
+        {{#foreach recents}}
+            <a href="{{url}}">{{{title}}}</a>
+        {{/foreach}}
+    </div>
+</div>
+{{/get}}
+
+
+<!-- add a floating button at right-bottom -->

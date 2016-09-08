@@ -1,0 +1,544 @@
+/* ==========================================================================
+    FROM: http://unicorn-ui.com/buttons/
+    MAINTAINER: https://twitter.com/_pascalandy
+   ========================================================================== */
+
+/*! @license
+*
+* Buttons
+* Copyright 2012-2014 Alex Wolfe and Rob Levin
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+/*
+* Compass (optional)
+*
+* We recommend the use of autoprefixer instead of Compass
+* when using buttons. However, buttons does support Compass.
+* simply change $ubtn-use-compass to true and uncomment the
+* @import 'compass' code below to use Compass.
+*/
+/*
+* Required Files
+*
+* These files include the variables and options
+* and base css styles that are required to generate buttons.
+*/
+/*
+* $ubtn prefix (reserved)
+*
+* This prefix stands for Unicorn Button - ubtn
+* We provide a prefix to the Sass Variables to
+* prevent namespace collisions that could occur if
+* you import buttons as part of your Sass build process.
+* We kindly ask you not to use the prefix $ubtn in your project
+* in order to avoid possilbe name conflicts. Thanks!
+*/
+/*
+* Button Namespace (ex .button or .btn)
+*
+*/
+/*
+* Button Defaults
+*
+* Some default settings that are used throughout the button library.
+* Changes to these settings will be picked up by all of the other modules.
+* The colors used here are the default colors for the base button (gray).
+* The font size and height are used to set the base size for the buttons.
+* The size values will be used to calculate the larger and smaller button sizes.
+*/
+/*
+* Button Colors
+*
+* $ubtn-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+/*
+* Button Shapes
+*
+* $ubtn-shapes is used to generate the different button shapes.
+* Edit or add shapes to the list below and recompile.
+* Each block contains the (name, border-radius).
+* The class is generated using the name: (ex .button-square).
+*/
+/*
+* Button Sizes
+*
+* $ubtn-sizes is used to generate the different button sizes.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, size multiplier).
+* The class is generated using the name: (ex .button-giant).
+*/
+/*
+* Color Mixin
+*
+* Iterates through the list of colors and creates
+*
+*/
+/*
+* No Animation
+*
+* Sets animation property to none
+*/
+/*
+* Clearfix
+*
+* Clears floats inside the container
+*/
+
+/* ==========================================================================
+    Base Button Style
+    The default values for the .button class
+   ========================================================================== */
+
+.button {
+  color: #666666;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Merriweather", "Open+Sans";
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 40px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  /*
+  * Disabled State
+  *
+  * The disabled state uses the class .disabled, is-disabled,
+  * and the form attribute disabled="disabled".
+  * The use of !important is only added because this is a state
+  * that must be applied to all buttons when in a disabled state.
+  */ }
+  .button:visited {
+    color: #666666; }
+  .button:hover, .button:focus {
+    background-color: #f6f6f6;
+    text-decoration: none;
+    outline: none; }
+  .button:active, .button.active, .button.is-active {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    background-color: #eeeeee;
+    border-color: #cfcfcf;
+    color: #d4d4d4;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); }
+  .button.disabled, .button.is-disabled, .button:disabled {
+    top: 0 !important;
+    background: #EEE !important;
+    border: 1px solid #DDD !important;
+    text-shadow: 0 1px 1px white !important;
+    color: #CCC !important;
+    cursor: default !important;
+    appearance: none !important; }
+    .button.disabled else, .button.is-disabled else, .button:disabled else {
+      -webkit-box-shadow: none !important;
+              box-shadow: none !important;
+      opacity: .8 !important; }
+
+/* ==========================================================================
+    Base Button Tyography
+   ========================================================================== */
+
+.button-uppercase {
+  text-transform: uppercase; }
+
+.button-lowercase {
+  text-transform: lowercase; }
+
+.button-capitalize {
+  text-transform: capitalize; }
+
+.button-small-caps {
+  font-variant: small-caps; }
+
+.button-icon-txt-large {
+  font-size: 36px !important; }
+
+
+/* ==========================================================================
+    Base padding
+   ========================================================================== */
+
+.button-width-small {
+  padding: 0 10px !important; }
+
+/* ==========================================================================
+    Base Colors. Create colors for buttons
+    (.button-primary, .button-secondary, etc.)
+   ========================================================================== */
+
+.button-primary,
+.button-primary-flat {
+  background-color: #1b9af7;
+  border-color: #1b9af7;
+  color: white; }
+  .button-primary:visited,
+  .button-primary-flat:visited {
+    color: white; }
+  .button-primary:hover, .button-primary:focus,
+  .button-primary-flat:hover,
+  .button-primary-flat:focus {
+    background-color: #4cb0f9;
+    border-color: #4cb0f9;
+    color: white; }
+  .button-primary:active, .button-primary.active, .button-primary.is-active,
+  .button-primary-flat:active,
+  .button-primary-flat.active,
+  .button-primary-flat.is-active {
+    background-color: #2798eb;
+    border-color: #2798eb;
+    color: #0880d7; }
+
+.button-plain,
+.button-plain-flat {
+  background-color: white;
+  border-color: white;
+  color: #1b9af7; }
+  .button-plain:visited,
+  .button-plain-flat:visited {
+    color: #1b9af7; }
+  .button-plain:hover, .button-plain:focus,
+  .button-plain-flat:hover,
+  .button-plain-flat:focus {
+    background-color: white;
+    border-color: white;
+    color: #1b9af7; }
+  .button-plain:active, .button-plain.active, .button-plain.is-active,
+  .button-plain-flat:active,
+  .button-plain-flat.active,
+  .button-plain-flat.is-active {
+    background-color: white;
+    border-color: white;
+    color: #e6e6e6; }
+
+.button-inverse,
+.button-inverse-flat {
+  background-color: #222222;
+  border-color: #222222;
+  color: #eeeeee; }
+  .button-inverse:visited,
+  .button-inverse-flat:visited {
+    color: #eeeeee; }
+  .button-inverse:hover, .button-inverse:focus,
+  .button-inverse-flat:hover,
+  .button-inverse-flat:focus {
+    background-color: #3c3c3c;
+    border-color: #3c3c3c;
+    color: #eeeeee; }
+  .button-inverse:active, .button-inverse.active, .button-inverse.is-active,
+  .button-inverse-flat:active,
+  .button-inverse-flat.active,
+  .button-inverse-flat.is-active {
+    background-color: #222222;
+    border-color: #222222;
+    color: #090909; }
+
+.button-action,
+.button-action-flat {
+  background-color: #a5de37;
+  border-color: #a5de37;
+  color: white; }
+  .button-action:visited,
+  .button-action-flat:visited {
+    color: white; }
+  .button-action:hover, .button-action:focus,
+  .button-action-flat:hover,
+  .button-action-flat:focus {
+    background-color: #b9e563;
+    border-color: #b9e563;
+    color: white; }
+  .button-action:active, .button-action.active, .button-action.is-active,
+  .button-action-flat:active,
+  .button-action-flat.active,
+  .button-action-flat.is-active {
+    background-color: #a1d243;
+    border-color: #a1d243;
+    color: #8bc220; }
+
+.button-highlight,
+.button-highlight-flat {
+  background-color: #feae1b;
+  border-color: #feae1b;
+  color: white; }
+  .button-highlight:visited,
+  .button-highlight-flat:visited {
+    color: white; }
+  .button-highlight:hover, .button-highlight:focus,
+  .button-highlight-flat:hover,
+  .button-highlight-flat:focus {
+    background-color: #fec04e;
+    border-color: #fec04e;
+    color: white; }
+  .button-highlight:active, .button-highlight.active, .button-highlight.is-active,
+  .button-highlight-flat:active,
+  .button-highlight-flat.active,
+  .button-highlight-flat.is-active {
+    background-color: #f3ab26;
+    border-color: #f3ab26;
+    color: #e59501; }
+
+.button-caution,
+.button-caution-flat {
+  background-color: #ff4351;
+  border-color: #ff4351;
+  color: white; }
+  .button-caution:visited,
+  .button-caution-flat:visited {
+    color: white; }
+  .button-caution:hover, .button-caution:focus,
+  .button-caution-flat:hover,
+  .button-caution-flat:focus {
+    background-color: #ff7680;
+    border-color: #ff7680;
+    color: white; }
+  .button-caution:active, .button-caution.active, .button-caution.is-active,
+  .button-caution-flat:active,
+  .button-caution-flat.active,
+  .button-caution-flat.is-active {
+    background-color: #f64c59;
+    border-color: #f64c59;
+    color: #ff1022; }
+
+.button-royal,
+.button-royal-flat {
+  background-color: #7b72e9;
+  border-color: #7b72e9;
+  color: white; }
+  .button-royal:visited,
+  .button-royal-flat:visited {
+    color: white; }
+  .button-royal:hover, .button-royal:focus,
+  .button-royal-flat:hover,
+  .button-royal-flat:focus {
+    background-color: #a49ef0;
+    border-color: #a49ef0;
+    color: white; }
+  .button-royal:active, .button-royal.active, .button-royal.is-active,
+  .button-royal-flat:active,
+  .button-royal-flat.active,
+  .button-royal-flat.is-active {
+    background-color: #827ae1;
+    border-color: #827ae1;
+    color: #5246e2; }
+
+/* ==========================================================================
+    Base Layout Styles
+    Very Miminal Layout Styles
+   ========================================================================== */
+
+.button-block,
+.button-stacked {
+  display: block; }
+
+/*
+* Button Types (optional)
+*
+* All of the files below represent the various button
+* types (including shapes & sizes). None of these files
+* are required. Simple remove the uneeded type below and
+* the button type will be excluded from the final build
+*/
+
+/* ==========================================================================
+    Button Shapes
+    (ex. Circle, Rounded, Pill)
+   ========================================================================== */
+
+.button-square {
+  border-radius: 0; }
+
+.button-box {
+  border-radius: 10px; }
+
+.button-rounded {
+  border-radius: 4px; }
+
+.button-pill {
+  border-radius: 200px; }
+
+.button-circle {
+  border-radius: 100%; }
+
+/* ==========================================================================
+    Size Adjustment for equal height & widht buttons
+    Remove padding and set a fixed width.
+   ========================================================================== */
+
+.button-circle,
+.button-box,
+.button-square {
+  padding: 0 !important;
+  width: 40px; }
+  .button-circle.button-giant,
+  .button-box.button-giant,
+  .button-square.button-giant {
+    width: 70px; }
+  .button-circle.button-jumbo,
+  .button-box.button-jumbo,
+  .button-square.button-jumbo {
+    width: 60px; }
+  .button-circle.button-large,
+  .button-box.button-large,
+  .button-square.button-large {
+    width: 50px; }
+  .button-circle.button-normal,
+  .button-box.button-normal,
+  .button-square.button-normal {
+    width: 40px; }
+  .button-circle.button-small,
+  .button-box.button-small,
+  .button-square.button-small {
+    width: 30px; }
+  .button-circle.button-tiny,
+  .button-box.button-tiny,
+  .button-square.button-tiny {
+    width: 24px; }
+
+/* ==========================================================================
+    No Fill / Border Buttons
+    They only have a border to define their hit target.
+   ========================================================================== */
+
+.button-border, .button-border-thin, .button-border-thick {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  line-height: 36px; }
+  .button-border:hover, .button-border-thin:hover, .button-border-thick:hover {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .button-border:active, .button-border-thin:active, .button-border-thick:active, .button-border.active, .active.button-border-thin, .active.button-border-thick, .button-border.is-active, .is-active.button-border-thin, .is-active.button-border-thick {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    -webkit-transition-property: all;
+            transition-property: all;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s; }
+
+/* ==========================================================================
+    Border Optional Sizes
+    A slight variation in border thickness
+   ========================================================================== */
+
+.button-border-thin {
+  border-width: 1px; }
+
+.button-border-thick {
+  border-width: 3px; }
+
+/* ==========================================================================
+    Button Groups
+    A group of related buttons displayed edge to edge
+   ========================================================================== */
+
+.button-group {
+  *zoom: 1;
+  position: relative;
+  display: inline-block; }
+  .button-group:after, .button-group:before {
+    content: '.';
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0; }
+  .button-group .button,
+  .button-group .button-dropdown {
+    float: left; }
+    .button-group .button:not(:first-child):not(:last-child),
+    .button-group .button-dropdown:not(:first-child):not(:last-child) {
+      border-radius: 0;
+      border-right: none; }
+    .button-group .button:first-child,
+    .button-group .button-dropdown:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: none; }
+    .button-group .button:last-child,
+    .button-group .button-dropdown:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+
+/* ==========================================================================
+    Button Sizes
+    (ex. .button-large, .button-small, etc.)
+   ========================================================================== */
+
+.button-giant {
+  font-size: 28px;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 70px; }
+
+.button-jumbo {
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 60px; }
+
+.button-large {
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px; }
+
+.button-normal {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 40px; }
+
+.button-small {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 30px; }
+
+.button-tiny {
+  font-size: 9.6px;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 24px; }
+
+/* ==========================================================================
+    Elements removed:
+
+    Border Buttons
+    Raised Buttons
+    3D Buttons
+    Glowing Buttons
+    Dropdown Below
+    Button Wrapper
+    Shadows right & left
+   ========================================================================== */

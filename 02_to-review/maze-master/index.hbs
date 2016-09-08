@@ -1,0 +1,25 @@
+{{!< default}}
+
+<div class="my-cover {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner">
+                    <h1 class="page-title">{{@blog.title}}</h1>
+                    <h2 class="page-description">{{@blog.description}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" role="main">
+    <div class="row">
+        <div class="col-md-9">
+            {{> "loop"}}
+        </div>
+        <div class="col-md-3">
+            {{> "sidebar"}}
+        </div>
+    </div>
+</div>
