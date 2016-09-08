@@ -1,13 +1,11 @@
 # changelog.md
 
-### backlog
-- the main 
-
-— — — — — — — — — — — — — — — —
-
 ### 1.33 (wip)
+- tk
+- tk
+- tk
+- tk
 - Repo hard reset (just created a new repo and delete the old one.)
-- 
 
 ### 1.32 (2016-09-07_21h22)
 
