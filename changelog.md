@@ -1,10 +1,7 @@
 # changelog.md
 
 ### 1.33 (wip)
-- tk
-- tk
-- tk
-- tk
+- Starting branch 1_33 in this new repo. Back to normal development process using branch, tag, release
 - Repo hard reset (just created a new repo and delete the old one.)
 
 ### 1.32 (2016-09-07_21h22)
