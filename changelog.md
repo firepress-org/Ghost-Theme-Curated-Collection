@@ -7,6 +7,11 @@
 
 ### 1.33 (wip)
 
+367d0da9 Updating the copy
+dab75edf Removed many themes
+ba44e84f add novacasper to review
+359b7b87 1.33 wip
+2d0ce412 new branch 1_33 / back to normal git process
 
 ### 1.32 (2016-09-07_21h22)
 
