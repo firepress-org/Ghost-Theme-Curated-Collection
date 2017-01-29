@@ -1,0 +1,20 @@
+{{#foreach posts}}
+
+    <div class="sample animated fadeIn">
+        <div class="container">
+            <div class="title animated fadeInUp">
+                <a href="{{url}}">
+                    <h1>{{title}}</h1>
+                </a>
+            </div>
+            {{> sidebar}}
+        </div>
+    </div>
+
+    <article class="excerpt animated fadeIn {{post_class}}">
+        <div class="container">
+            <p>{{excerpt words="100"}}&hellip;</p>
+        </div>
+    </article>
+
+{{/foreach}}

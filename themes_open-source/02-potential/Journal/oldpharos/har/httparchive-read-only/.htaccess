@@ -1,0 +1,31 @@
+DirectoryIndex index.php
+Options -Indexes
+
+<FilesMatch "(\.inc|cachegen)">
+order allow,deny
+deny from all
+</FilesMatch>
+
+# Compress/gzip html, XML, css and js and fonts and CSV
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript application/javascript font/ttf application/octet-stream
+
+
+# Add a far future Expires header to .gif, .jpg, .css and .js.
+# TODO - Need to add a versioning system to resource URLs to make them cacheable.
+<FilesMatch "\.(png|gif|jpg|js|css|ico)$">
+ExpiresActive On
+ExpiresDefault "access plus 1 day"
+Header set ETag ""
+</FilesMatch>
+
+
+<FilesMatch "(filmstrip|harviewer|interesting-images|runs).js">
+SetHandler application/x-httpd-php
+Header set Content-Encoding "gzip"
+Header set Content-Type "application/javascript"
+</FilesMatch> 
+
+
+# earlier I handed out http://httparchive.org/dev/ and http://httparchive.org/beta/
+RedirectMatch ^/dev/(.*)$ http://dev.httparchive.org/$1
+RedirectMatch ^/beta/(.*)$ http://beta.httparchive.org/$1

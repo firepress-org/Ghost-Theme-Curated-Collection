@@ -1,0 +1,44 @@
+<aside class="blog-sidebar">
+
+    {{!
+        Sidebar contains widgets for both main blog and dev blog.
+        They are conditionally shown/hidden via code injection.
+    }}
+
+    <section class="blog-subscribe blog-subscribe-main widget">
+        <h3>Join Thousands</h3>
+        <p>of subscribers who get fresh content from us once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-subscribe blog-subscribe-dev widget">
+        <h3>Dev Updates</h3>
+        <p>The latest development news in your inbox once per week.</p>
+        <a class="button-add large wide" data-toggle="modal" data-target="#blogsubscribe">Subscribe Now</a>
+    </section>
+
+    <section class="blog-text blog-text-dev widget">
+        <p>All the things:</p>
+        <ul>
+            <li><a href="https://github.com/TryGhost/Ghost/blob/master/.github/CONTRIBUTING.md">Contributing Guide</a></li>
+            <li><a href="https://trello.com/b/EceUgtCL/ghost-roadmap">Official Roadmap</a></li>
+            <li><a href="https://ghost.org/slack/">Slack developer chat</a></li>
+            <li>Meetings: Tuesdays, 17:30 UTC</li>
+        </ul>
+    </section>
+
+    <section class="popular-posts widget">
+        <h3>Our <mark>Top Posts</mark> Right Now</h3>
+        {{!
+            Yep this is static. Soz. You were probably hoping for something fancy.
+        }}
+        <ol>
+            <li><a href="http://blog.ghost.org/fastest-way-to-blog/"><span class="number" aria-hidden="true">1</span>The Single Greatest Method for Immediately Increasing Your Blog Post Production Speed by 600%</a></li>
+            <li><a href="http://blog.ghost.org/great-blog-post-ideas/"><span class="number" aria-hidden="true">2</span>How To Come up with Great Ideas for Blog Posts, Every Single Time</a></li>
+            <li><a href="http://blog.ghost.org/writing-tools/"><span class="number" aria-hidden="true">3</span>13 Writing Tools To Enhance The Quality of Your Blog</a></li>
+            <li><a href="http://blog.ghost.org/markdown/"><span class="number" aria-hidden="true">4</span>How to Write Faster, Better &amp; Longer: The Ultimate Guide to Markdown</a></li>
+            <li><a href="http://blog.ghost.org/distributed-team-tools/"><span class="number" aria-hidden="true">5</span>11 Tools That Allow us to Work from Anywhere on Earth as a Distributed Company</a></li>
+        </ol>
+    </section>
+
+</aside>

@@ -1,0 +1,26 @@
+{{!< default}}
+
+<header class="animated fadeIn" {{#if author.cover}}style="background-image: url({{author.cover}})"{{/if}}>
+    <div class="container" data-stellar-ratio="0.75">
+        <div class="title animated fadeInUp">
+            {{#author}}
+                <h1>{{name}}</h1>
+                <p>{{bio}}</p>
+            {{/author}}
+        </div>
+        <div class="sidebar text-right meta">
+            <div class="published animated fadeInUp">
+                <div class="author-image">
+                    {{#author}}
+                        <img src="{{image}}" alt="{{name}}" />
+                    {{/author}}
+                </div>
+                <strong class="article-count text-center">{{plural pagination.total empty="No posts" singular="% article" plural="% articles"}}</strong>
+            </div>
+        </div>
+    </div>
+</header>
+
+{{> excerpts}}
+
+{{pagination}}

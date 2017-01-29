@@ -1,0 +1,172 @@
+/*  ---------------------------------------------- */
+/*   BANNER
+/*  ---------------------------------------------- */
+@media only screen and (min-width : 1024px) {
+	.main-header {
+		padding-top: 102px;
+	}
+}
+
+.Banner {
+	position: relative;
+	background: rgba(255,255,255,0.9);
+}
+
+/* Fixed position banner */
+@media only screen and (min-width : 1024px) {
+	.Banner--fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+}
+
+.Banner--hasScrolled {
+    transition: all 0.15s ease-in;
+    background: rgba(255,255,255,.9);
+    box-shadow: inset 0px 0px 0px 1px #EFEFEF, 1px 1px 6px rgba(0,0,0,0.05);
+}
+
+
+/*  ---------------------------------------------- */
+/*   GLOBAL TOP NAV CONTAINER
+/*  ---------------------------------------------- */
+.NavGlobal {
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	padding: 0 50px 0 116px;
+}
+
+/* mobile displays */
+@media only screen and (max-width: 500px) {
+	.NavGlobal {
+		padding: 0 12px 0 116px;
+	}
+}
+
+/*  ---------------------------------------------- */
+/*   LOGO
+/*  ---------------------------------------------- */
+.Banner-logo {
+	position: absolute;
+	top: 25px;
+	left: 42px;
+	background-image: url("/assets/img/cloud66.svg");
+	background-size: contain;
+	height: 54px;
+	width: 54px;
+	text-indent: -99999px;
+}
+
+@media only screen and (max-width: 500px) {
+	.Banner-logo {
+		top: 25px;
+		left: 12px;
+	}
+}
+
+
+/*  ---------------------------------------------- */
+/*   NAV
+/*  ---------------------------------------------- */
+.NavPrimary--marketing li {
+	display: none !important;
+}
+
+@media only screen and (min-width : 1024px) {
+	.NavPrimary--marketing li {
+		display: inline-block !important;
+	}
+}
+
+
+.NavPrimary {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.NavPrimary--marketing {
+	margin-left: -11px;
+}
+
+.NavPrimary-item {
+	padding: 0 14px;
+	display: inline-block;
+}
+
+.NavPrimary-link {
+	font-family: "Montserrat", sans-serif;
+	display: block;
+	font-size: 1.5rem;
+	outline: 0 !important;
+	line-height: 66px;
+}
+
+@media only screen and (max-width: 500px) {
+	.NavPrimary-item--lap {
+		display: none;
+	}
+}
+
+.NavPrimary-link.is-active {
+	color: #23527c;
+}
+
+.NavPrimary-item--button {
+	padding-top: 22px;
+}
+
+.NavPrimary-button {
+    font-weight: 500;
+	font-size: 1.5rem;
+    padding: 0.6em 1.6em;
+	border-radius: 0;
+}
+
+.NavPrimary-item--mobile {
+	display: none;
+}
+@media only screen and (max-width : 1024px) {
+	.NavPrimary-item--mobile {
+		display: inline-block;
+	}
+}
+
+.NavPrimary-link--login {
+    color: #0088cc;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 7px;
+    font-weight: 500;
+}
+
+/*  ---------------------------------------------- */
+/*   BANNER SCROLLED TRANSITION
+/*  ---------------------------------------------- */
+.NavPrimary-link,
+.Banner-logo,
+.NavPrimary-item--button {
+	transition: all 0.15s ease-in;
+}
+
+
+.NavPrimary-link {
+	line-height: 66px;
+}
+.Banner-logo {
+	transition: all 0.15s ease-in;
+	top: 18px;
+	left: 40px;
+	height: 44px;
+	width: 44px;
+}
+.NavPrimary-item--button {
+	transition: all 0.15s ease-in;
+	padding-top: 12px;
+	padding-right: 0;
+}

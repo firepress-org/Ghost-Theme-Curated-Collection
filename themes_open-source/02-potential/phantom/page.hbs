@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{#post}}
+
+    {{> post-meta}}
+
+    <header class="animated fadeIn" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+        <div class="container" data-stellar-ratio="0.75">
+            {{> title}}
+            <div class="sidebar text-right meta">
+                <div class="published animated fadeInUp">
+                    <strong>Last Updated</strong>
+                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format='DD MMM YYYY'}}</time>
+                </div>
+            </div>
+        </div>
+    </header>
+
+{{! Temporary indentation shift for Handlebars issue }}
+{{> content}}
+
+{{/post}}

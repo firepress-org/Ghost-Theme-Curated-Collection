@@ -1,0 +1,52 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div class="container-fluid content fadeIn animated">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="hidden">{{@blog.title}}</h1>
+
+			<div class="title-container">
+				<h1 class="fadeInDown animated title"></h1>
+			</div><!-- /.title -->
+
+			<hr>
+
+			<div class="col-lg-6 padding-right left-column">
+				<p>Currently i'm living and <br>working in Split, Croatia. <br>You can find me crafting HTML/CSS, Wordpress websites for <a href="http://slicejack.com" target="_blank" class="button blue-yellow">Slicejack</a> as a junior front-end developer.</p>
+			</div><!-- /.col -->
+
+			<div class="col-lg-6 padding-left right-column">
+				<p>If you are interested in my work please follow me on <a href="http://twitter.com/alenvuletic" target="_blank" class="button twitter">Twitter</a> and <a href="http://hr.linkedin.com/pub/alen-vuleti%C4%87/87/573/550" target="_blank" class="button linkedin">LinkedIn</a>. You can also visit my <a href="http://slicejack.com/author/alen-vuletic/" target="_blank" class="button blue-yellow">blog</a> and read posts about front-end and wordpress development.</p>
+			</div><!-- /.col -->
+
+			<div class="col-lg-12 full-column">
+				<p><br>Can I help you? Don't hesitate to contact me on <span class="button underline">alenvuletic@gmail.com</span></p>
+			</div><!-- /.col -->
+
+			<div class="col-lg-12">
+				<h2>Work</h2>
+				<hr class="tiny">
+			</div><!-- /.col -->
+		</div><!-- /.col -->
+	</div><!-- /.row -->
+</div><!-- /.featured-top -->
+
+{{! The main content area on the homepage }}
+<main id="content" class="work" role="main">
+	<div class="col-sm-12 no-padding">
+		{{! The tag below includes the post loop - partials/loop.hbs }}
+		{{> "loop"}}
+	</div><!-- /.col -->
+</main>
+
+<script>
+	$(function(){
+		$(".title").typed({
+			strings: ["{{@blog.description}}"],
+			typeSpeed: 60,
+			showCursor: true,
+			startDelay: 600
+		});
+	});
+</script>
