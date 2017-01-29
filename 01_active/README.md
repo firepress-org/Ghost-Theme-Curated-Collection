@@ -1,1 +1,0 @@
-01_dev/FirePress-Casper is the real project. It follows standard normal branch version, tag and release cycle process.
