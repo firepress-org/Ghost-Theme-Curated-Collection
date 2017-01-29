@@ -25,3 +25,5 @@ I though about it but I wanted to maintnant ONE main collection repo so the fork
 I tried this and it looks good on paper. But working with submodule is a pain and it's easy to mess up your project. Per example, I was stocked in a merge because, for some reasons, the .gitmodules produced warning. The result was that I could not fix it because git didn't allow me to change to the branch it was asking to fix ... 
 
 Anyways, I'm still open to the idea, but only if someone with real experience with submodule want to make it work with me :)
+
+— The spirit of FirePress
