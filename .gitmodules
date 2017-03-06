@@ -1,3 +1,6 @@
 [submodule "01_curated/FirePress_Casper"]
 	path = 01_curated/FirePress_Casper
 	url = https://github.com/firepress-org/FirePress_Casper
+[submodule "03_approved/FirePress_Casper"]
+	path = 03_approved/FirePress_Casper
+	url = https://github.com/firepress-org/FirePress_Casper
