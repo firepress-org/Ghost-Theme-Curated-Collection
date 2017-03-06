@@ -1,3 +1,1 @@
-TK - Means it’s not ready for prime time yet / Pascal Andy 2016-09-07_21h20.
-
-— The spirit of FirePress
+We moved all rejected theme over: **[Ghost-Theme-Curated-Collection-No-Go](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go)**.
