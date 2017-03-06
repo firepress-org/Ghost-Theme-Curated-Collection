@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /viewsite.php
-Disallow: /download.php
-Disallow: /websites.php
-

@@ -1,0 +1,15 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+<article class="col-md-3 col-sm-4 no-padding box project">
+    <a href="{{url}}" class="overlay">
+        <div class="box-content">
+            <h1>{{title}}</h1>
+            <hr>
+        </div><!-- /.box-content -->
+    </a><!-- /.overlay -->
+
+    <a href="{{url}}">
+        <img src="{{image}}">
+    </a>
+</article><!-- /.article -->
+{{/foreach}}

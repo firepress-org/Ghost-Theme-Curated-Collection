@@ -1,1 +1,0 @@
-This themes requires A LOT of customization.

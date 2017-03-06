@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#tag}}
+<header class="tag-head" >
+  <h2>{{name}}</h1>
+  <p>
+    {{#if description}}
+      {{description}}
+    {{else}}
+      A {{../pagination.total}} post collection
+    {{/if}}
+  </p>
+  <hr>
+</header>
+{{/tag}}
+
+{{> "loop"}}

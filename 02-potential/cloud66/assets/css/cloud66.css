@@ -1,0 +1,240 @@
+/*------------------------------------*\
+    Used by Cloud66 specific theme
+    Updated 29/01/16
+\*------------------------------------*/
+
+@import url("buttons.css");
+@import url("type.css");
+@import url("navigation.css");
+@import url("grid.css");
+@import url("forms.css");
+@import url("prettyprint.css");
+
+
+/*------------------------------------*\
+    BUGFIX
+\*------------------------------------*/
+.read-next {
+    /* fixes a bug with horizontal scrollbars and flexbox */
+    overflow: hidden;
+}
+
+/*------------------------------------*\
+    UTILITY CLASSES
+\*------------------------------------*/
+.u-objLeft {
+    float: left !important;
+}
+
+.u-objRight {
+    float: right !important;
+}
+
+.u-textSmall {
+  font-size: 1.2rem !important;
+}
+
+.u-textCentered {
+    text-align: center;
+}
+.u-textRight {
+    text-align: right;
+}
+.u-textLeft {
+    text-align: left;
+}
+.u-textMuted {
+    color: #999 !important;
+}
+.u-textPadded {
+    padding: 0 3.8em 1em 3.8em;
+}
+
+.u-fullWidth {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+.u-noBorder {
+    border: none !important;
+}
+
+/*---------------------------------------------------*\
+    BLOCKS (BEM) - SUIT Naming conventions
+\*---------------------------------------------------*/
+
+
+/*------------------------------------*\
+    HERO
+    Absolutely Positioned  bg image
+\*------------------------------------*/
+.Hero {
+    /*background-image: url(/assets/img/hero-tour.png);*/
+    position: absolute;
+    top: 0;
+	left: 0;
+    height: 600px;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 2560px 600px;
+    z-index: -1;
+}
+
+.post-template .Hero {
+    background-image: url(/assets/img/hero-tour.png);
+    top: -240px;
+}
+
+.home-template .Hero {
+    /*background-image: url(/assets/img/hero-home.png);*/
+    height: 1200px;
+    background-size: 2560px 1200px;
+}
+@media only screen and (max-width: 500px) {
+	.home-template .Hero {
+        background-position: -683px -78px;
+        display: none;
+	}
+}
+
+.tag-template .Hero {}
+.author-template .Hero {
+    top: -110px;
+}
+
+
+/*------------------------------------*\
+    SECTION (BEM)
+\*------------------------------------*/
+.Section {
+    margin-top: 2.6em;
+}
+.Section--dividerTop {
+    border-top: 1px solid #ebf2f6;
+}
+.Section--cta {
+    text-align: center;
+    padding-top: 4em;
+}
+
+
+/*------------------------------------*\
+    MODULE
+\*------------------------------------*/
+.Module {
+    padding: 2.8em 0;
+}
+
+.Module-title {
+    font-size: 16px;
+    color: #000;
+    color: #444;
+}
+
+.Module-title--relatedItem {
+    margin: 0 0 -1.2em 0;
+}
+
+/*------------------------------------*\
+    MODULE
+\*------------------------------------*/
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/*------------------------------------*\
+    MAILCHIMP
+\*------------------------------------*/
+.Subscribe.is-shown {
+    transform: translateY( 0px );
+}
+
+.Subscribe {
+    text-align: left;
+    box-sizing: border-box;
+    transition: transform 0.65s ease-in;
+    position: relative;
+    margin: 3em auto 3em auto;
+    width: 600px;
+    transform: translateY( 140px );
+    background: #EDEDED;
+    padding: 1em;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+.Subscribe  .Subscribe-label {
+        font-size: 1.3rem;
+        color: #000;
+        margin: 0 0 6px 0;
+}
+.Subscribe  .Subscribe-field {
+    width: 81%;
+}
+
+.Subscribe  .Button {
+    transition: none;
+}
+
+/*------------------------------------*\
+    COVER IMAGE
+\*------------------------------------*/
+.CoverImage {
+    position: relative;
+    height: 12em;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px 0 2em 0;
+}
+/* > 1024px */
+@media only screen and (min-width : 1025px) {
+    .CoverImage {
+       padding: 0 16em;
+    }
+}
+/* < 1024px */
+@media only screen and (max-width : 1024px) {
+    .CoverImage {
+       height: 8em;
+    }
+}
+
+.CoverImage-title {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.CoverImage--index {
+    padding-top: 12em;
+    background-image: url("/assets/img/covers/index.jpg");
+}
+/* > 1024px */
+@media only screen and (min-width : 1025px) {
+
+}
+
+.CoverImage-titleInner {
+    background: rgba(0,0,0,0.45);
+    padding: 4px;
+}
+
+/* < 1024px */
+@media only screen and (max-width : 1024px) {
+    .CoverImage--index {
+        padding-top: 9em;
+    }
+    .CoverImage-title {
+        font-size: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    h2.CoverImage-title {
+        font-size: 16px;
+    }
+}
