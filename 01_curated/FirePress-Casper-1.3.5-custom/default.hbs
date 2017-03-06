@@ -27,9 +27,22 @@
 	<script src="https://use.fontawesome.com/a35a40811e.js"></script>
 	
 	{{!-- CSS Code Syntax (highlight) by_pascalandy --}}
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night-eighties.min.css">  
+	<style>  
+	  pre {
+		word-wrap: normal;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		-webkit-hyphens: none;
+		hyphens: none;
+		font-size: 0.85em;
+		line-height: 1.4em;
+	  }
+		pre code, pre tt {
+		white-space: pre;
+	  }
+	</style>
+		
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
@@ -60,5 +73,9 @@
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
+	{{!-- Code Syntax (highlight) by_pascalandy --}}
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>  
+	<script>hljs.initHighlightingOnLoad();</script>
+	
 </body>
 </html>
