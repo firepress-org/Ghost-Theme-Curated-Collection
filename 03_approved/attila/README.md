@@ -1,3 +1,5 @@
+https://github.com/zutrinken/attila
+
 # Attila
 
 A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
