@@ -1,0 +1,1 @@
+We moved all rejected theme over: **[Ghost-Theme-Curated-Collection-No-Go](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go)**.
