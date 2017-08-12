@@ -1,3 +1,6 @@
+## Status
+WIP (work in progress). Not ready for prime time yet.
+
 ## About
 This is a collection of open-source theme. 
 
@@ -7,15 +10,12 @@ It would be nice if everything could be free. But sadly this is a public repo an
 ## Repo URL
 https://github.com/firepress-org/ghost-themes-collection.git
 
-## Status
-WIP (work in progress). Not ready for prime time yet.
-
 ## See changelog
 https://github.com/firepress-org/splashy/blob/master/changelog.md
 
 ## See it
 
-To see all these themes live, go to [themes.firepress.org](themes.firepress.org).
+When ready the theme will be available over http://play-with-ghost.com/
 
 We made sure to make it easy for your to compare all those theme by putting some common content in them.
 
