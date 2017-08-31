@@ -1,0 +1,22 @@
+{
+    "name" : "crisply",
+    "version" : "1.0.1",
+    "description" : "A minimalist and responsive theme for Ghost, based on Crisp by Kathy Qian",
+    "author" : {
+      "name": "Michael Camilleri",
+      "email": "mike@inqk.net",
+      "url": "https://inqk.net/"
+    },
+    "license" : "MIT",
+
+    "engines" : {
+      "ghost": ">=1.0.0"
+    },
+    "config": {
+        "posts_per_page": 10
+    },
+    "screenshots": {
+        "desktop": "assets/screenshots/desktop.png",
+        "mobile": "assets/screenshots/mobile.png"
+    }
+}
