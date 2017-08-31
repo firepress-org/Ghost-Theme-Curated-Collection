@@ -1,5 +1,7 @@
 # Stupendous
 
+https://github.com/dcefram/stupendous
+
 My personal blog's Ghost theme. Check out [my blog](http://dcefram.com) if ever you are curious as to
 how this thing look like.
 

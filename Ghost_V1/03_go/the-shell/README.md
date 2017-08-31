@@ -1,5 +1,7 @@
 # The Shell
 
+https://github.com/mityalebedev/The-Shell
+
 Simple theme for [Ghost](http://github.com/tryghost/ghost/).
 
 * Pure CSS
