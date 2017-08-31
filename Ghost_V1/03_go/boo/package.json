@@ -1,0 +1,46 @@
+{
+    "name": "boo",
+    "description": "A beautiful, clean, and responsive theme for Ghost.",
+    "demo": "http://boo-demo.tenoku.com",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": "^1.0.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.png",
+        "mobile": "assets/screenshot-mobile.png"
+    },
+    "author": {
+        "name": "Tenoku Software",
+        "email": "ivan@ivandigital.com",
+        "url": "http://tenoku.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimalist",
+            "Clean",
+            "Minimal",
+            "Personal Blogs",
+            "Responsive"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "boo",
+        "minimalist",
+        "clean",
+        "blog"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tenoku/boo"
+    },
+    "bugs": "https://github.com/tenoku/boo/issues",
+    "contributors": "https://github.com/tenoku/boo/graphs/contributors",
+    "config": {
+        "posts_per_page": 4
+    }
+}
