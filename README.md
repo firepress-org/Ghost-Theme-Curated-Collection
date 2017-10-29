@@ -3,7 +3,7 @@
 
 - **Status** - WIP (work in progress). Not ready for prime time 
 - **About** - This is a curation od open-source Ghost Themes. It’s actually a very opiniated classification of ghost themes. 
-- **Github repo** - https://github.com/firepress-org/ghost-themes-collection.git
+- **Github repo** - https://github.com/firepress-org/Ghost-Theme-Curated-Collection
 - **MIT Licence** - See LICENCE.md
 
 ## Tree
