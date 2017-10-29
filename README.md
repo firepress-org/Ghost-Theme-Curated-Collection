@@ -22,63 +22,17 @@
 │   └── stupendous.zip
 ├── 02_to_review
 │   └── README.md
-├── 03_sorry
-│   ├── Ghost_V0.11
-│   │   ├── 01_to_review
-│   │   │   ├── Chopstick.zip
-│   │   │   ├── Daring.zip
-│   │   │   ├── Mapache.zip
-│   │   │   ├── README.md
-│   │   │   ├── Steam.zip
-│   │   │   ├── Vapor-chiil.zip
-│   │   │   ├── attila.zip
-│   │   │   ├── boo-master.zip
-│   │   │   ├── brage.zip
-│   │   │   ├── decent.zip
-│   │   │   ├── mnml.zip
-│   │   │   ├── readium-saulgray.zip
-│   │   │   ├── tranquility-lane-master.zip
-│   │   │   ├── troyhunt.zip
-│   │   │   └── typewriter_1-0-0.zip
-│   │   ├── 02_potential
-│   │   │   ├── Blog.zip
-│   │   │   ├── Glimpse.zip
-│   │   │   ├── Journal.zip
-│   │   │   ├── Masonry.zip
-│   │   │   ├── README.md
-│   │   │   ├── Roon.zip
-│   │   │   ├── Sticko.zip
-│   │   │   ├── TrueStyle.zip
-│   │   │   ├── Uno-Zen.zip
-│   │   │   ├── Vapor.zip
-│   │   │   ├── arabica-1.1.1.zip
-│   │   │   ├── casper-startup-next-door.zip
-│   │   │   ├── casper-with-preview.zip
-│   │   │   ├── cloud66.zip
-│   │   │   ├── crisp.zip
-│   │   │   ├── ghostion.zip
-│   │   │   ├── ghostwriter.zip
-│   │   │   ├── minto.zip
-│   │   │   ├── phantom.zip
-│   │   │   ├── readium.zip
-│   │   │   └── stampfli.zip
-│   │   ├── 03_approved
-│   │   │   ├── FirePress_Casper.zip
-│   │   │   ├── README.md
-│   │   │   ├── attila.zip
-│   │   │   └── crisply.zip
-│   │   └── 04_rejected
-│   │       └── README.md
-│   ├── README.md
-│   ├── did-not-load
-│   │   └── ghostium-master.zip
-│   ├── innocent-master.zip
-│   ├── mnml.zip
-│   └── the-shell.zip
+├── 03_no-go
+│   └── README.md
 ├── 04-other
 │   └── README.md
 ├── LICENCE.md
 └── README.md
 
-10 directories, 59 files
+4 directories, 14 files
 ```
+
+## Where are the Themes that are no-goo ?
+
+I made another repo for this:
+https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go
