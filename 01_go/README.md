@@ -1,6 +1,6 @@
 ## Sources
 
-These are all open source project.
+These are open source projects that I offer by defaut to all Firepress clients. They are ranked in alpha-numic order.
 
 - [attila](https://github.com/zutrinken/attila)
 - [bleak](https://github.com/zutrinken/bleak)
