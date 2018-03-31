@@ -68,7 +68,7 @@ jQuery(function($) {
 	function grid() {
 		$('.post-list .post .post-image img').each(function() {
 			var img = $(this);
-			img.load(function() {
+			img.on('load', function() {
 				img.parents('.post-image').css({
 					'height' : '0',
 					'padding-bottom' : 100 / img.width() * img.height() + '%'
@@ -145,29 +145,6 @@ jQuery(function($) {
 	comments();
 
 	/* ==========================================================================
-	   Reading Time
-	   ========================================================================== */
-
-	function readingTime() {
-		// Don't execute on the front page
-		if (location.pathname === '/') {
-			return;
-		}
-
-		var post = body.find('article');
-		var postReadingTime = post.find('.post-meta-reading-time');
-
-		post.readingTime({
-			readingTimeTarget: postReadingTime.find('.estimated-reading-time'),
-			wordCountTarget: postReadingTime.find('.word-count'),
-			error: function () {
-				postReadingTime.find('.post-reading-time').remove();
-			}
-		});
-	}
-	readingTime();
-
-	/* ==========================================================================
 	   Reload all scripts after AJAX load
 	   ========================================================================== */
 
@@ -178,7 +155,6 @@ jQuery(function($) {
 		video();
 		comments();
 		currentMenuFix();
-		readingTime();
 	}
 
 	/* ==========================================================================

@@ -1,3 +1,5 @@
+https://github.com/tenoku/boo
+
 [![Demo status](https://img.shields.io/badge/live%20demo-online-brightgreen.svg)](https://boo-demo.tenoku.com/)
 [![Release shield](https://img.shields.io/github/release/tenoku/boo.svg)](https://github.com/tenoku/boo/releases)
 [![Ghost version shield](https://img.shields.io/badge/ghost%20version->=%200.11.3-00BCD4.svg)](https://github.com/tenoku/boo/releases)
