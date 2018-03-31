@@ -1,5 +1,7 @@
 # Simply theme for [Ghost](https://github.com/tryghost/ghost/)
 
+https://github.com/godofredoninja/simply
+
 [![Ghost version](https://img.shields.io/badge/Ghost-1.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
 [![Node](https://img.shields.io/node/v/uno-zen.svg)](https://nodejs.org/en/)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://bit.ly/PayPal-GodoFredoNinja)
@@ -9,9 +11,10 @@
 ## Free theme for Ghost
 
 Hello, I created this theme for Ghost with inspiration from [Medium](https://medium.com/).
-It is available for free so you can use on your site. It is strictly forbidden to use it for commercial use. If you have any suggestions to improve the theme,  you can send me a tweet [@GodoFredoNinja](https://goo.gl/y3aivK)
+It is available for free so you can use on your site. It is strictly forbidden to use it for commercial use. If you have any suggestions to improve the theme,  you can send me a tweet [@GodoFredoNinja](https://goo.gl/y3aivK).
 
-## ❤ Please, help me with a small donation on [Paypal](https://bit.ly/PayPal-GodoFredoNinja). It'll help motivate me to update the theme with many improvements.
+## ❤ Please, help me with a small donation on [Paypal](https://bit.ly/PayPal-GodoFredoNinja). It'll help motivate me to update the theme with many improvements
+
 [![](./donate.gif)](https://bit.ly/PayPal-GodoFredoNinja)
 
 ![](./screenshot.png)
@@ -22,6 +25,7 @@ You can see Simply in action on my Page [Demo](https://goo.gl/V7moIY)
 
 ## Featured
 
+- Support for different [languages](http://themes.ghost.org/docs/i18n#section-how-to-add-any-language) (en - es)
 - Responsive layout
 - Blog navigation
 - Page 404 (Multiple faces emoticons)
@@ -127,7 +131,7 @@ This enables comments and comment counter
 ```html
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
-    $('.simply-facebook').removeClass('u-hide');
+    $('.simply-facebook, #post-comments').removeClass('u-hide');
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
@@ -136,6 +140,15 @@ This enables comments and comment counter
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
 ```
+
+## Publication Language
+
+![](./documentation/language.png)
+
+Mapache supports English and Spanish languages.
+if you want to have in another language you just have to copy `locales>en.json` and rename the file then translate to your favorite language:
+
+Just enter the [language/locale tag](https://www.w3schools.com/tags/ref_language_codes.asp) of the files to use (e.g.: `fr.json` for French, `zh.json` for Chinese, `ja.json` for Japanese)
 
 ## Add additional content to the sidebar
 
@@ -173,7 +186,6 @@ Take a look at the [Prismjs Supported Language List](http://prismjs.com/#languag
 
 - vimeo
 - Dailymotion
-- Facebook Video
 - Youtube
 - Vid
 - kickstarter

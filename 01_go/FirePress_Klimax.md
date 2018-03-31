@@ -1,1 +1,1 @@
-https://github.com/firepress-org/Ghost-Theme-Curated-Collection
+https://github.com/firepress-org/FirePress_Klimax
