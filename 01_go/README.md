@@ -13,8 +13,8 @@ These are open source projects that I offer by defaut to all Firepress clients. 
 - [stupendous](https://github.com/dcefram/stupendous)
 - [vapor-gwei](https://github.com/robinj/gwei)
 
-## Note about the FirePress’s themes
+## About FirePress’s themes
 
 **[FirePress_Klimax](https://github.com/firepress-org/FirePress_Klimax)** is based on the original Casper theme from the Ghost Foundation. You can find it in the [branch 1.4](https://github.com/TryGhost/Casper/tree/1.4).
 
-**[FirePress_Klimax2](https://github.com/firepress-org/FirePress_Klimax2)** is based on the newest Casper theme. It was introduced when Ghost 1.0 was released. You can find it in the [master branch](https://github.com/TryGhost/Casper/tree/master).
+**[FirePress_Klimax2](https://github.com/firepress-org/FirePress_Klimax2)** is based on the newest Casper theme which was introduced when Ghost 1.0 was released. You can find it in the [master branch](https://github.com/TryGhost/Casper/tree/master).
