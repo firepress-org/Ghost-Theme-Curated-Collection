@@ -1,17 +1,16 @@
 ## Sources
 
+🙈 I’m aware that this README needs **more love**. Time is the biggest challenge here. Feel free to [buzz me on Twitter ](https://twitter.com/askpascalandy) if you have any questions or comments.
+
 These are open source projects that I offer by defaut to all Firepress clients. They are ranked in alpha-numic order.
 
 - [attila](https://github.com/zutrinken/attila)
-- [bleak](https://github.com/zutrinken/bleak)
-- [boo](https://github.com/tenoku/boo)
-- [codedaze](https://github.com/chrissainty/codedaze-theme/)
 - [crisply](https://github.com/pyrmont/crisply)
 - [FirePress_Klimax](https://github.com/firepress-org/FirePress_Klimax)
 - [FirePress_Klimax2](https://github.com/firepress-org/FirePress_Klimax2)
 - [simply](https://github.com/godofredoninja/simply)
 - [stupendous](https://github.com/dcefram/stupendous)
-- [vapor-gwei](https://github.com/robinj/gwei)
+- [vapor](https://github.com/sethlilly/Vapor/pull/61)
 
 ## About FirePress’s themes
 
