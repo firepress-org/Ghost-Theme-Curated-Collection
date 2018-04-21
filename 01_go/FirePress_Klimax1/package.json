@@ -1,8 +1,8 @@
 {
-    "name": "FirePress_Klimax",
-    "description": "Firepress Klimax is default theme used at FirePress. All details > https://github.com/firepress-org/FirePress_Klimax",
-    "demo": "http://firepress.org",
-    "version": "1.4.02",
+    "name": "FirePress_Klimax1",
+    "description": "FirePress_Klimax1 is a theme supported by FirePress. All details can be found at https://github.com/firepress-org/FirePress_Klimax1",
+    "demo": "https://play-with-ghost.com/",
+    "version": "1.4.09",
     "engines": {
         "ghost": ">=0.9.0 <1.0.0"
     },
@@ -29,8 +29,8 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/firepress-org/FirePress_Klimax"
+        "url": "https://github.com/firepress-org/FirePress_Klimax1"
     },
-    "bugs": "https://github.com/firepress-org/FirePress_Klimax/issues",
-    "contributors": "https://github.com/firepress-org/FirePress_Klimax/graphs/contributors"
+    "bugs": "https://github.com/firepress-org/FirePress_Klimax1/issues",
+    "contributors": "https://github.com/firepress-org/FirePress_Klimax1/graphs/contributors"
 }
