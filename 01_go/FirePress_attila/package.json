@@ -1,8 +1,8 @@
 {
-  "name": "attila",
+  "name": "FirePress_attila",
   "description": "Ghost Theme",
   "demo": "http://attila.zutrinken.com",
-  "version": "1.5.0",
+  "version": "1.5.0B",
   "engines": {
     "ghost": ">=1.2.0"
   },
