@@ -24,7 +24,7 @@ Thanks to the power of communities, this is where `1 + 1 = 3`.
 
 ## Copyright & License
 
-Copyright (c) 2018 Pascal Andy — Released under the [MIT license](LICENSE).
+Copyright (c) 2018 Pascal Andy — Released under the [GNU license](https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE).
 
 
 ## Sources
