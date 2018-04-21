@@ -1,8 +1,8 @@
 ## Introduction
 
-**What is this?** It’s a curation of open-source Ghost Themes. This project is a **monorepo** of Ghost Themes (or an aggregation of  existing projects). It means that these theme are not developped via this repository. Look at the source to see all the action. 
+Find a curation of open-source Ghost Themes. It’s a very **opiniated** classification of ghost themes. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a Hell yes! kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
 
-It’s a very **opiniated** classification of ghost themes. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a Hell yes! kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
+This project is a **monorepo** (an aggregation of existing projects). It means that these Ghost themes are not developped directly within this repository and be be outdated. Look at the source to see all the action. 
 
 
 ## Work in progress
