@@ -1,4 +1,52 @@
-# Changelog
+# CHANGELOG.md - FirePress_Vapor
+
+FirePress Public Roadmap:
+https://trello.com/b/0fCwwzqc/firepress-public-roadmap
+
+
+## 0.00 template — — — — — — — — — —
+
+**🎨 User Story**
+- As an OpsHero, I want to 0o0o
+
+**🚀 Major feature**
+
+**item** — blabla
+
+**⚡️ Minor Feature**
+
+**item** — blabla
+
+**🐛 Bugs**
+
+**item** — blabla
+
+**⚠️ Warning**
+
+**item** — blabla
+
+---
+
+## 1.5.0B — — — — — — — — — —
+
+**⚡️ Minor Feature**
+
+- Write a serious README
+
+## 1.5.0A — — — — — — — — — —
+  
+  **🚀 Major feature**
+
+- Adding default custom elements by FirePress
+
+## 1.5.0 — — — — — — — — — —
+  
+  **🚀 Major feature**
+
+- Upgrade theme for Ghost 1.xx
+
+---
+  
 
 * 1.4 - 2014-04-19
     * Added `package.json` (closes [#26](https://github.com/sethlilly/Vapor/issues/26))

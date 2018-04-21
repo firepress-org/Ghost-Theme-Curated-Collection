@@ -10,9 +10,46 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/normalize-min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen-min.css"}}" />
 
+		{{!-- CUSTOM ELEMENTS ADDED BY: https://twitter.com/askpascalandy SEE BELOW --}}
+
+	<!-- CSS Buttons (unicorn-ui) -->
+    <link rel="stylesheet" type="text/css" href="{{asset "css_firepress/css_unicorn/buttons.min.css"}}" />
+	
+	<!-- To Test - https://bulma.io/documentation/elements/button/ -->
+
+	{{!-- CSS Grid and Tables --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css_firepress/css_simplegrid/simplegrid.min.css"}}" />
+	
+	{{!-- CSS Icon via fontawesome 5 --}}
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+  	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/v4-shims.js"></script>
+
+	{{!-- CSS Code Syntax (highlight agate)
+	Line number is not supported > http://highlightjs.readthedocs.io/en/latest/line-numbers.html --}}
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css">  
+	<style>  
+	  pre {
+		word-wrap: normal;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		-webkit-hyphens: none;
+		hyphens: none;
+		font-size: 0.85em;
+		line-height: 1.4em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	  }
+		pre code, pre tt {
+		white-space: pre;
+	  }
+	</style>
+
+	{{!-- CUSTOM ELEMENTS ADDED BY: https://twitter.com/askpascalandy SEE ABOVE --}}
+
+	
     {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
     {{ghost_head}}
@@ -49,5 +86,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
+		{{!-- CUSTOM ELEMENTS ADDED BY: https://twitter.com/askpascalandy SEE BELOW --}}
+	
+	{{!-- Code Syntax (highlight) --}}
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
 </body>
 </html>
