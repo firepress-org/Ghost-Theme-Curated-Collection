@@ -1,69 +1,42 @@
-# Simply theme for [Ghost](https://github.com/tryghost/ghost/)
+# FirePress_simply
 
-https://github.com/godofredoninja/simply
+## Touch it: Live demo
 
 [![Ghost version](https://img.shields.io/badge/Ghost-1.x-brightgreen.svg)](https://github.com/TryGhost/Ghost)
-[![Node](https://img.shields.io/node/v/uno-zen.svg)](https://nodejs.org/en/)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://bit.ly/PayPal-GodoFredoNinja)
 
-> Simple and Elegant theme for [Ghost](https://github.com/tryghost/ghost/).
+- [See this theme](#) on your own device.
+- Even better! [Login into Ghost Admin Panel](#) and see how this theme looks with your own content. 
 
-## Free theme for Ghost
+*(The website is in the pipeline but it’s not public at the moment.)*
 
-Hello, I created this theme for Ghost with inspiration from [Medium](https://medium.com/).
-It is available for free so you can use on your site. It is strictly forbidden to use it for commercial use. If you have any suggestions to improve the theme,  you can send me a tweet [@GodoFredoNinja](https://goo.gl/y3aivK).
+**Screenshots** can be found [here](#).
 
-## ❤ Please, help me with a small donation on [Paypal](https://bit.ly/PayPal-GodoFredoNinja). It'll help motivate me to update the theme with many improvements
 
-[![](./donate.gif)](https://bit.ly/PayPal-GodoFredoNinja)
+## Why fork this Ghost Theme ?
 
-![](./screenshot.png)
+**Enhancements** — This theme is an enhanced version of the Ghost Theme **simply**. If you don’t know [Ghost](https://ghost.org/) it’s great tools to publish your website and your blog. These are the essential enhancements I can’t live without:
 
-## Demo
+- **Icons** (Font Awesome 5)
 
-You can see Simply in action on my Page [Demo](https://goo.gl/V7moIY)
+**Drop-in replacement** — No special tweaks to do. It will work out of the box.
 
-## Featured
+**Code Injection** — Take a look those snippets in this [Git repo](https://github.com/firepress-org/Code-Injection-Ghost). It’s an easy way to customize your theme.
 
-- Support for different [languages](http://themes.ghost.org/docs/i18n#section-how-to-add-any-language) (en - es)
-- Responsive layout
-- Blog navigation
-- Page 404 (Multiple faces emoticons)
-- Page subscribe
-- Pagination Infinite Scroll
-- Instagram Feed in footer of Post
-- [AMP](https://github.com/godofredoninja/Hodor-AMP-Template-for-Ghost) Template (Accelerated Mobile Pages)
-- Cover images for blog, tag and author
-- links to followers in social media
-- Related Articles (6 articles)
-- Template Video Post Format
-- Template Image post Format
-- Template Audio post Format
-- Template not Image Featured in Post
-- YouTube Subscribe Button in video post Format
-- 5 articles latest posts in the (Author - Tag) section sidebar
-- Tags Cloud in page of Author and Tag
-- Previous and next button in the Post
-- Support for comments (Facebook or Disqus)
-- Support for counter comments (Facebook or Disqus)
-- Buttons to share the article (Facebook - Twitter - Reddit - Linkedin - Pinterest - Whatsapp)
-- Counter shared articles on Facebook
-- Sticky content in the sidebar
-- YouTube, Vimeo, kickstarter, Facebook, dailymotion => Responsive
-- Lazy image loading for better performance only in backgrounds
-- Code syntax [Prismjs](http://prismjs.com/index.html#languages-list) Supported all syntax.
+**Curated** — This theme is one the few themes that pass our big test. See the curated collection [in this Git repo](https://github.com/firepress-org/Ghost-Theme-Curated-Collection/tree/master/01_go).
 
-## Web Browser Support for Simply
+**Compatibility** — This theme will work on [Ghost](https://ghost.org/) >= **1.0**.
 
-Simply supports the following web [browsers](http://caniuse.com/#search=flexbox).
+I didn’t include those elements in this theme as I saw many styling conflicts:
 
-## Ghost Settings
+- **Buttons** (unicorn UI)
+- **Code Syntax** (highlight.js) 
+- **Grid** (great to make pricing table)
+
+### Ghost Settings
 
 > Enable all checkboxes on the labs page in your Ghost admin panel.
 
 ![](./documentation/labs.png)
-
-## Simply Settings
 
 ### Social Links
 
@@ -196,31 +169,81 @@ Take a look at the [Prismjs Supported Language List](http://prismjs.com/#languag
 - Mixcloud
 - Spotify
 
----
-
-> **Add video or Audio where convenient. When you change the theme you will not have problems and not have Problem in your AMP Template**
-
----
-
-![](./documentation/video-post-format.png)
-
-## Change Theme Style
+### Change Theme Style
 
 To make your changes with your favorite colors you just have to add the following code and replace with your colors
 [Themes](THEMES.md).
 
-### Credits
+## About simply 
 
-- [Hodor AMP Template](https://github.com/godofredoninja/Hodor-AMP-Template-for-Ghost)
-- [Normalize](https://necolas.github.io/normalize.css/)
-- [Jquery.ghostHunter](https://github.com/jamalneufeld/ghostHunter)
-- [Prismjs](http://prismjs.com/)
-- [sticky-kit](https://github.com/leafo/sticky-kit)
-- [lunr.js](https://github.com/olivernn/lunr.js)
-- [zoom.js](https://github.com/fat/zoom.js/)
-- [jquery-lazyload](http://www.appelsiini.net/projects/lazyload)
-- [Fonts](https://fonts.google.com/?selection.family=Droid+Serif:400,700|Source+Code+Pro|Source+Sans+Pro:300,400,600,700&query=Droid+Serif)
+Hello, I created this theme for Ghost with inspiration from [Medium](https://medium.com/).
+It is available for free so you can use on your site. It is strictly forbidden to use it for commercial use. If you have any suggestions to improve the theme,  you can send me a tweet [@GodoFredoNinja](https://goo.gl/y3aivK).
+
+### ❤ Please, help me with a small donation on [Paypal](https://bit.ly/PayPal-GodoFredoNinja). It'll help motivate me to update the theme with many improvements
+
+[![](./donate.gif)](https://bit.ly/PayPal-GodoFredoNinja)
+
+![](./screenshot.png)
+
+## Featured
+
+- Support for different [languages](http://themes.ghost.org/docs/i18n#section-how-to-add-any-language) (en - es)
+- Responsive layout
+- Blog navigation
+- Page 404 (Multiple faces emoticons)
+- Page subscribe
+- Pagination Infinite Scroll
+- Instagram Feed in footer of Post
+- [AMP](https://github.com/godofredoninja/Hodor-AMP-Template-for-Ghost) Template (Accelerated Mobile Pages)
+- Cover images for blog, tag and author
+- links to followers in social media
+- Related Articles (6 articles)
+- Template Video Post Format
+- Template Image post Format
+- Template Audio post Format
+- Template not Image Featured in Post
+- YouTube Subscribe Button in video post Format
+- 5 articles latest posts in the (Author - Tag) section sidebar
+- Tags Cloud in page of Author and Tag
+- Previous and next button in the Post
+- Support for comments (Facebook or Disqus)
+- Support for counter comments (Facebook or Disqus)
+- Buttons to share the article (Facebook - Twitter - Reddit - Linkedin - Pinterest - Whatsapp)
+- Counter shared articles on Facebook
+- Sticky content in the sidebar
+- YouTube, Vimeo, kickstarter, Facebook, dailymotion => Responsive
+- Lazy image loading for better performance only in backgrounds
+- Code syntax [Prismjs](http://prismjs.com/index.html#languages-list) Supported all syntax.
+
+
+## Contributing
+
+Thanks to the power of communities, this is where `1 + 1 = 3`.
+
+1. Fork it
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
+
 
 ## Copyright & License
 
 Copyright (c) 2017 GodoFredoNinja - Released under the [CC BY-NC 4.0](LICENSE).
+
+
+## Sources
+
+- This Git repo is available [here](https://github.com/firepress-org/FirePress_simply).
+- This project was forked from this [Git repo](https://github.com/godofredoninja/simply).
+
+
+## Author
+
+In the git world most people refer themselves as maintainers but I hate this expression. It feels heavy. I much prefer author.
+
+Shared by [Pascal Andy](https://pascalandy.com/blog/now/). Find me on [Twitter](https://twitter.com/askpascalandy).
+
+
+
+
