@@ -1,1 +1,0 @@
-Identify this theme clearly as it might be under directory `casper` as the default theme.

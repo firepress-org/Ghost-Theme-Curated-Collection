@@ -1,8 +1,8 @@
 {
     "name": "FirePress_Klimax2",
-    "description": "Firepress Klimax is default theme used at FirePress. All details > https://github.com/firepress-org/FirePress_Klimax2",
-    "demo": "http://firepress.org",
-    "version": "2.1.10A",
+    "description": "FirePress_Klimax2 is a theme supported by FirePress. All details can be found at https://github.com/firepress-org/FirePress_Klimax2",
+    "demo": "https://play-with-ghost.com/",
+    "version": "2.1.10F",
     "engines": {
         "ghost": ">=1.2.0"
     },
@@ -29,10 +29,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/TryGhost/Casper.git"
+        "url": "https://github.com/firepress-org/FirePress_Klimax2"
     },
-    "bugs": "https://github.com/TryGhost/Casper/issues",
-    "contributors": "https://github.com/TryGhost/Casper/graphs/contributors",
+    "bugs": "https://github.com/firepress-org/FirePress_Klimax2/issues",
+    "contributors": "https://github.com/firepress-org/FirePress_Klimax2/graphs/contributors",
     "devDependencies": {
         "autoprefixer": "6.3.6",
         "cssnano": "3.7.1",

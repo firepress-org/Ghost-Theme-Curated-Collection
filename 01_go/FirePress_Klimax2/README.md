@@ -1,72 +1,66 @@
-## Demo
+# FirePress_Klimax2
 
-https://github.com/firepress-org/FirePress_Klimax2
 
-Try it via [play-with-ghost.com](http://play-with-ghost.com/)
-play-with-ghost is place to see and to try Ghost. No sign-up required! Just play with it!
+## Touch it: Live demo
 
-## FirePress Klimax2
+- [See this theme](#) on your own device.
+- Even better! [Login into Ghost Admin Panel](#) and see how this theme looks with your own content. 
 
-Our theme **FirePress Klimax2** is an enhanced version of the original [Casper 2 theme](https://github.com/TryGhost/Casper/tree/2.10.0) made by the Ghost foundation. The goal is to make a drop-in replacement of the original Casper theme. 
+*(The website is in the pipeline but it’s not public at the moment.)*
 
-The **version** number [can be found in the package.json](https://github.com/firepress-org/FirePress_Klimax/blob/master/package.json#L5)
+**Screenshots** can be found [here](#).
 
-It [follows updates](https://github.com/TryGhost/Casper/blob/master/package.json#L5)) has we want to keep best practice and new feature made by the original Casper theme.
 
-## Assets
+## Why fork this Ghost Theme ?
 
-Find them here: https://github.com/firepress-org/demo-barbershop-avenue
+**Enhancements** — This theme is an enhanced version of the theme **Casper** made by the [Ghost foundation](https://ghost.org/). Here are the features I added:
 
-The **assets** are all the elements that were needed to create the website.
+- **Icons** (Font Awesome 5)
+- Juicy **buttons**
+- **Code Syntax** (highlight.js) 
+- **Grid** (See it as an avance table)
+- Minified file (CSS and JS)
 
-- Text in markdown format (*.md)
-- Images (various stage, till the final result)
-- Logos
-- Infographic file (Keynote, pdd files)
-- Backup files (json)
+These are the essential enhancements I can’t live without:
 
-## Features
+- **Buttons** (unicorn UI)
+- **Icons** (Font Awesome 5)
+- **Code Syntax** (highlight.js) 
+- **Grid** (great to make pricing table)
 
-- Table/grid (https://github.com/zachacole/Simple-Grid)
-- Icons ( via Font Awesome v4.7.0)
-- Buttons (https://github.com/alexwolfe/Buttons/)
-- Code Syntax (9.12.0/highlight.min.js)
+**Drop-in replacement** — You can use it as a drop-in replacement of the original Casper theme.
 
-## New Features
-I’m tracking them under the project [play-with-ghost.com](http://play-with-ghost.com/) over the [issue section](https://github.com/pascalandy/play-with-ghost/labels/theme%2FFirePress_Klimax2).
+**Code Injection** — Take a look those snippets in this [Git repo](https://github.com/firepress-org/Code-Injection-Ghost). It’s an easy way to customize your theme.
 
-## Preview
+**Curated** — This theme is one the few themes that pass our big test. See the curated collection [in this Git repo](https://github.com/firepress-org/Ghost-Theme-Curated-Collection/tree/master/01_go).
 
-![klimax2-montage](https://user-images.githubusercontent.com/6694151/29440322-cf76a16a-8391-11e7-9353-2a98da5e2edb.jpg)
+**Compatibility** — This theme will work on [Ghost](https://ghost.org/) >= **1.0**.
 
-## Github repo
-https://github.com/firepress-org/FirePress_Klimax2
 
 ## Contributing
-The section is interesting for developers and powerusers.
 
-1. Fork it!
+Thanks to the power of communities, this is where `1 + 1 = 3`.
+
+1. Fork it
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+5. Submit a pull request
 
-## Licence
-This project uses the GNU LICENCE, [read it here](https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE/blob/master/LICENSE.md).
 
-## A last word
-**P.S.** If you have solid skills 🤓 with Docker Swarm, Linux bash and the gang and you would love to help a startup to launch 🔥 a solid project, I would love to get to know you 🍻. Buzz me 👋 on Twitter [@askpascalandy](https://twitter.com/askpascalandy).
+## Copyright & License
 
-You can see the things that are done and the things we have to do [here](http://firepress.org/blog/technical-challenges-we-are-facing-now/). I’m looking for bright and caring people to join this [journey](http://firepress.org/blog/tag/from-the-heart/) with me.
+Copyright (c) 2013-2017 Ghost Foundation - Released under the [MIT license](LICENSE).
 
-Thanks in advance!
-Pascal
 
-```
- ____                     _      _              _
-|  _ \ __ _ ___  ___ __ _| |    / \   _ __   __| |_   _
-| |_) / _` / __|/ __/ _` | |   / _ \ | '_ \ / _` | | | |
-|  __/ (_| \__ \ (_| (_| | |  / ___ \| | | | (_| | |_| |
-|_|   \__,_|___/\___\__,_|_| /_/   \_\_| |_|\__,_|\__, |
-                                                  |___/
-```
+## Sources
+
+- This Git repo is available [here](https://github.com/firepress-org/FirePress_Klimax2).
+- This project was forked from this [Git repo](https://github.com/TryGhost/Casper).
+
+
+## Author
+
+In the git world most people refer themselves as maintainers but I hate this expression. It feels heavy. I much prefer author.
+
+Shared by [Pascal Andy](https://pascalandy.com/blog/now/). Find me on [Twitter](https://twitter.com/askpascalandy).
