@@ -13,3 +13,6 @@
 [submodule "01_go/FirePress_Stupendous"]
 	path = 01_go/FirePress_Stupendous
 	url = https://github.com/firepress-org/FirePress_Stupendous
+[submodule "01_go/FirePress_Vapor"]
+	path = 01_go/FirePress_Vapor
+	url = https://github.com/firepress-org/FirePress_Vapor
