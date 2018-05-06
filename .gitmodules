@@ -19,3 +19,6 @@
 [submodule "01_go/FirePress_Simply"]
 	path = 01_go/FirePress_Simply
 	url = https://github.com/firepress-org/FirePress_Simply
+[submodule "01_go/FirePress_Klimax1"]
+	path = 01_go/FirePress_Klimax1
+	url = https://github.com/firepress-org/FirePress_Klimax1
