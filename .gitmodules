@@ -10,3 +10,6 @@
 [submodule "01_go/FirePress_Attila"]
 	path = 01_go/FirePress_Attila
 	url = https://github.com/firepress-org/FirePress_Attila
+[submodule "01_go/FirePress_Stupendous"]
+	path = 01_go/FirePress_Stupendous
+	url = https://github.com/firepress-org/FirePress_Stupendous
