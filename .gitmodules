@@ -4,3 +4,6 @@
 [submodule "03_approved/FirePress_Casper"]
 	path = 03_approved/FirePress_Casper
 	url = https://github.com/firepress-org/FirePress_Casper
+[submodule "01_go/FirePress_Crisply"]
+	path = 01_go/FirePress_Crisply
+	url = https://github.com/firepress-org/FirePress_Crisply
