@@ -28,17 +28,18 @@ function fct_update_submodule {
     git push;
 }
 
+# Define project's root
 ROOT_PROJECT=$(pwd)
- 
-# change to the submodule directory
 
-SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor)
-SUBMODULES_COUNT=2
+# Define which themes to update
+SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam)
+SUBMODULES_COUNT=8
 
 export MIN=1
 export MAX="$SUBMODULES_COUNT";
 
 for ACTION in $(seq $MIN $MAX); do
+    # change to the submodule directory
     cd ${SUBMODULES_LIST[$ACTION]};
     pwd; sleep 1;
     fct_update_submodule;
