@@ -40,7 +40,7 @@ export MAX="$SUBMODULES_COUNT"
 
 for ACTION in $(seq $MIN $MAX); do
     # change to the submodule directory
-    echo && echo "SUBMODULE # $ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
+    echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
     cd ${SUBMODULES_LIST[$ACTION]};
     fct_update_submodule;
 done
