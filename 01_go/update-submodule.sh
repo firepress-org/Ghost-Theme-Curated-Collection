@@ -32,7 +32,7 @@ ROOT_PROJECT=$(pwd)
  
 # change to the submodule directory
 
-SUBMODULES_LIST=(FirePress_Attila FirePress_Simply)
+SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Simply)
 SUBMODULES_COUNT=2
 
 export MIN=1
