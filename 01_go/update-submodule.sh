@@ -32,15 +32,14 @@ ROOT_PROJECT=$(pwd)
  
 # change to the submodule directory
 
-SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Simply)
+SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor)
 SUBMODULES_COUNT=2
 
 export MIN=1
 export MAX="$SUBMODULES_COUNT";
 
-for ACTION in FirePress_Attila FirePress_Simply; do
-    cd $ACTION;
-    #cd ${SUBMODULES_LIST[$ACTION]};
+for ACTION in $(seq $MIN $MAX); do
+    cd ${SUBMODULES_LIST[$ACTION]};
     pwd; sleep 1;
     fct_update_submodule;
 done

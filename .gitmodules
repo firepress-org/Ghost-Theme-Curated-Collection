@@ -25,3 +25,6 @@
 [submodule "01_go/FirePress_Klimax2"]
 	path = 01_go/FirePress_Klimax2
 	url = https://github.com/firepress-org/FirePress_Klimax2
+[submodule "01_go/FirePress_Steam"]
+	path = 01_go/FirePress_Steam
+	url = https://github.com/firepress-org/FirePress_Steam.git
