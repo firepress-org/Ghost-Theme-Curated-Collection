@@ -9,6 +9,14 @@ This project is a **monorepo**. It means it’s an aggregation of existing proje
 
 1. The most interesting directory is: [01_go](https://github.com/firepress-org/Ghost-Theme-Curated-Collection/tree/master/01_go).
 
+## Submodule
+
+This is a note to myself as I always strungle to use submodules
+
+git submodule add https://github.com/<user>/rock
+git submodule update --init --recursive
+
+
 
 ## Contributing
 
