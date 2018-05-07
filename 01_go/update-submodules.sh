@@ -8,6 +8,7 @@ set -o nounset
 
 ###############################################################################
 # By Pascal Andy https://pascalandy.com/blog/now/
+# answer from: https://stackoverflow.com/a/5828396
 
 ###############################################################################
 # Functions
@@ -31,7 +32,7 @@ function fct_update_submodule {
 # Define project's root
 ROOT_PROJECT=$(pwd)
 
-# Define which themes to update
+# Define a list of themes to update
 SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam)
 SUBMODULES_COUNT=8
 
