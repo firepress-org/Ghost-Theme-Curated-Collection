@@ -42,7 +42,7 @@ for ACTION in $(seq $MIN $MAX); do
     # change to the submodule directory
     echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
     cd ${SUBMODULES_LIST[$ACTION]} && pwd && \
-    fct_update_submodule;
+    fct_update_submodule || true;
 done
 
 
