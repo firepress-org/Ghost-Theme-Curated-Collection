@@ -36,12 +36,12 @@ SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 
 SUBMODULES_COUNT=8
 
 export MIN=1
-export MAX="$SUBMODULES_COUNT";
+export MAX="$SUBMODULES_COUNT"
 
 for ACTION in $(seq $MIN $MAX); do
     # change to the submodule directory
-    cd ${SUBMODULES_LIST[$ACTION]};
-    pwd; sleep 1;
+    echo && echo "SUBMODULE is> ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
+    cd ${SUBMODULES_LIST[$ACTION]} && \
     fct_update_submodule;
 done
 
