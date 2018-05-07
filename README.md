@@ -2,7 +2,7 @@
 
 It’s a curation of open-source Ghost Themes (*a template if you prefer*) for [Ghost](https://ghost.org/). It’s a very **opiniated** classification. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a « Hell yes! » kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
 
-This project is a **monorepo**. It means it’s an aggregation of existing projects. These Ghost themes are not developped directly within this repository and may be outdated. Look at the source to see all the action. 
+This project is a **monorepo**. It means it’s an aggregation of existing projects. These Ghost themes are not developped directly within this repository. Look at the source to see all the action. 
 
 [Ghost](https://ghost.org/) is a free and open source website & blogging platform designed to simplify the process of publishing. It’s individual bloggers as well as online publications. You can see Ghost as a CMS (content management system) designed to be better alternative to systems like: *WordPress, Drupal, Medium, Tumblr*, etc.
 
@@ -14,9 +14,9 @@ This project is a **monorepo**. It means it’s an aggregation of existing proje
 
 ## Submodules
 
-This is a note to myself as I always strungle to use submodules
+This is a note to myself as I always strungle to use submodules.
 
-**To add a new theme**:
+**To add a new theme as a submodule**:
 
 ```
 git submodule add $GIT_URL
@@ -28,8 +28,9 @@ git push
 **To update submodules from parents projects**:
 
 ```
-cd 01_go
-./update-submodules.sh
+cd 01_go && \
+./update-submodules.sh && \
+echo "submodules are updated"
 ```
 
 
