@@ -15,17 +15,17 @@ set -o nounset
 function fct_update_submodule {
 
     # checkout desired branch
-    git checkout master
+    git checkout master && \
 
     # update
-    git pull
+    git pull && \
 
     # get back to your project root
-    cd "$ROOT_PROJECT"
+    cd "$ROOT_PROJECT" && \
 
     # now the submodules are in the state you want, so
-    git commit -am "Pulled down update from the submodule"
-    sleep 2;
+    git commit -am "Pulled down update from the submodule" && \
+    git push;
 }
 
 ROOT_PROJECT=$(pwd)
