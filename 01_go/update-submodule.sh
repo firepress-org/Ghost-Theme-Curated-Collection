@@ -38,8 +38,9 @@ SUBMODULES_COUNT=2
 export MIN=1
 export MAX="$SUBMODULES_COUNT";
 
-for ACTION in $(seq $MIN $MAX); do
-    cd ${SUBMODULES_LIST[$ACTION]};
+for ACTION in FirePress_Attila FirePress_Simply; do
+    cd $ACTION;
+    #cd ${SUBMODULES_LIST[$ACTION]};
     pwd; sleep 1;
     fct_update_submodule;
 done
