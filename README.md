@@ -4,22 +4,6 @@ It’s a curation of open-source Ghost Themes (*a template if you prefer*) for [
 
 This project is a **monorepo**. It means it’s an aggregation of existing projects. These Ghost themes are not developped directly within this repository. Look at the source to see all the action. 
 
-## About Ghost our favorite CMS
-
-[Ghost](https://ghost.org/) is a free and open source website & blogging platform designed to simplify the process of publishing. It’s for individual bloggers as well as online publications. You can see Ghost as a CMS (content management system) designed as an alternative to systems like *Medium, WordPress, Squarespace, Wix, Tumblr, Drupal, Zoola*, etc.
-
-On the other side, the idea behind **FirePress** is to empower freelancers and small organizations to be able to build an outstanding mobile-first website. **We exclusively host Ghost websites**.
-
-Because we believe your website should speak up in your name, we consider our mission completed once your site has become [your impresario](https://play-with-ghost.com/ghost-themes/why-launching-your-next-website-with-firepress/).
-
-
-##  Live Demo
-
-Head over to the [Live Demo](https://play-with-ghost.com/ghost-themes/playground/) section, and see what Ghost can do for you. Thanks to `play-with-ghost.com` you can even login directly into the **admin panel** by using the available credentials. You can also see and try many Ghost **Themes**.
-
-We you can try **Ghost version 2** here:<br>
-https://play-with-ghost.com/ghost-themes/firepress-vapor-for-barbershops/
-
 
 ## Start here
 
@@ -48,6 +32,23 @@ echo "submodules are updated"
 ```
 
 
+## About Ghost our favorite CMS
+
+**What is Ghost?** — Ghost is an open source software that lets you create your website with a blog. See the [FAQ section](https://play-with-ghost.com/ghost-themes/faq/#what-is-ghost) for more details.
+
+On the other side, **at FirePress we do one thing and we do it with all our heart: we host Ghost’s websites**. The idea behind FirePress is to empower freelancers and small organizations to be able to build an outstanding mobile-first website.
+
+Because we believe your website should speak up in your name, we consider our mission completed once your site has become [your impresario](https://play-with-ghost.com/ghost-themes/why-launching-your-next-website-with-firepress/). Start your [free trial here](https://play-with-ghost.com/ghost-themes/free-10-day-trial/).
+
+
+##  Live Demo (online)
+
+Head over to [play-with-ghost.com](https://play-with-ghost.com/) . It’s is a playground to learn about Ghost. You can see Ghost themes and login into the **admin panel** by using the available credentials. In short, you can try Ghost on the spot without having to sign-up!
+
+Since August 24th 2018, you can try **Ghost version 2** here:<br>
+https://play-with-ghost.com/ghost-themes/firepress-vapor-for-barbershops/
+
+
 ## Contributing
 
 Thanks to the power of communities, this is where `1 + 1 = 3`.
@@ -70,11 +71,6 @@ Thanks to the power of communities, this is where `1 + 1 = 3`.
 - This fork is released under the **GNU** [license](https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE).
 - View **MIT** license information at:<br>  https://ghost.org/license/ for the software.
 
-As with all Docker images, these likely also contain other software which may be under different licenses (such as Bash, etc. from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
-
-Some additional license information which was able to be auto-detected might be found in the repo-info repository's ghost/ directory.
-
-As for any pre-built image usage, it is the image user's responsibility to ensure that any use of this image complies with any relevant licenses for all software contained within.
 
 ## About
 
