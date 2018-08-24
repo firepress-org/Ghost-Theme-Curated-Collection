@@ -49,12 +49,14 @@ Thanks to the power of communities, this is where `1 + 1 = 3`.
 ## License & Sources
 
 
--View the **GNU** license information at https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE
-- This Git repo is available at https://github.com/firepress-org/Ghost-Theme-Curated-Collection
+- View the **GNU** license information at:<br>
+- https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE
+- This Git repo is available at:<br>
+- https://github.com/firepress-org/Ghost-Theme-Curated-Collection
 
 
-## Author
+## About
 
-In the world of OSS (open source software) most people refer themselves as maintainers. The thing is… I hate this expression. It feels heavy and not fun. I much prefer author.
-
-Shared by [Pascal Andy](https://pascalandy.com/blog/now/). Find me on [Twitter](https://twitter.com/askpascalandy).
+- [Pascal Andy’s « now page »](https://pascalandy.com/blog/now/)
+- Follow me on [Twitter](https://twitter.com/askpascalandy)
+- Find more Ghost Themes on [play-with-ghost.com](https://play-with-ghost.com/)
