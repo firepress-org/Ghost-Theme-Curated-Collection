@@ -1,8 +1,23 @@
 ## What is this?
 
-It’s a curation of open-source Ghost Themes (*a template if you prefer*) for [Ghost](https://ghost.org/). It’s a very **opiniated** classification. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a « Hell yes! » kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
+It’s a curation of open-source Ghost Themes (*a template if you prefer*) for Ghost. It’s a very **opiniated** classification. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a « Hell yes! » kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
 
 This project is a **monorepo**. It means it’s an aggregation of existing projects. These Ghost themes are not developped directly within this repository. Look at the source to see all the action. 
+
+**What is Ghost?** — Ghost is an open source software that lets you create your website with a blog. See the [FAQ section](https://play-with-ghost.com/ghost-themes/faq/#what-is-ghost) for more details.
+
+## FirePress Hosting
+
+**At FirePress we do one thing and we do it with our whole heart: we host fully managed Ghost’s websites**. The idea behind FirePress is to empower freelancers and small organizations to be able to build an outstanding mobile-first website.
+
+We also offer a **workshop** where participants ends up with a website/blog they can easily operate themselves. Details are coming soon. It is available in those cities:
+
+- Montréal - Canada
+- Toronto - Canada
+- New-York - USA
+- Québec City - Canada
+
+Because we believe your website should speak up in your name, we consider our mission completed once your site has become [your impresario](https://play-with-ghost.com/ghost-themes/why-launching-your-next-website-with-firepress/). Start your [free trial here](https://play-with-ghost.com/ghost-themes/free-10-day-trial/).
 
 
 ## Start here
