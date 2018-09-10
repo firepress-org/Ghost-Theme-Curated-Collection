@@ -42,6 +42,6 @@ ROOT_PROJECT=$(pwd)
 for ACTION in FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam; do
     # change to the submodule directory
     #echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
-    cd "$ACTION " && pwd && \
+    cd "$ACTION" && pwd && \
     fct_update_submodule || true;
 done
