@@ -24,7 +24,7 @@ function fct_update_submodule {
     cd "$ROOT_PROJECT" && \
 
     # now the submodules are in the state you want, so
-    git commit -am "Pulled down update from the submodule $ACTION" && \
+    git commit -am "$ACTION — Pull update(s) from submodule" && \
     git push;
 }
 
