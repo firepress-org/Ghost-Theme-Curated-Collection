@@ -41,7 +41,7 @@ ROOT_PROJECT=$(pwd)
 # Manually add every open source theme that are supported by FirePress here.
 for ACTION in FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam; do
     # change to the submodule directory
-    echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
-    cd ${SUBMODULES_LIST[$ACTION]} && pwd && \
+    #echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
+    cd "$ACTION " && pwd && \
     fct_update_submodule || true;
 done
