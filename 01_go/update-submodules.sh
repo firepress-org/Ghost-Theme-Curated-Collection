@@ -31,14 +31,15 @@ function fct_update_submodule {
 # --- Define project's root
 ROOT_PROJECT=$(pwd)
 
-# --- Define a list of themes to update
-SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam)
-SUBMODULES_COUNT=8
+    # --- Define a list of themes to update
+    #SUBMODULES_LIST=(DummyItem FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam)
+    #SUBMODULES_COUNT=8
 
-export MIN=1
-export MAX="$SUBMODULES_COUNT"
+    #export MIN=1
+    #export MAX="$SUBMODULES_COUNT"
 
-for ACTION in $(seq $MIN $MAX); do
+# Manually add every open source theme that are supported by FirePress here.
+for ACTION in FirePress_Attila FirePress_Crisply FirePress_Klimax1 FirePress_Klimax2 FirePress_Simply FirePress_Stupendous FirePress_Vapor FirePress_Steam; do
     # change to the submodule directory
     echo && echo "SUBMODULE #$ACTION is > ${SUBMODULES_LIST[$ACTION]}" && sleep 2 && \
     cd ${SUBMODULES_LIST[$ACTION]} && pwd && \
