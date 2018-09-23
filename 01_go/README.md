@@ -1,2 +1,1 @@
-See the main README at:
-https://github.com/firepress-org/Ghost-Theme-Curated-Collection
+Please refer to the main README at https://github.com/firepress-org/Ghost-Theme-Curated-Collection
