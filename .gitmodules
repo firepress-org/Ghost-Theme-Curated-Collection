@@ -15,7 +15,7 @@
 	url = https://github.com/firepress-org/FirePress_Stupendous
 [submodule "01_go/FirePress_Vapor"]
 	path = 01_go/FirePress_Vapor
-	url = https://github.com/firepress-org/FirePress_Vapor
+	url = https://github.com/firepress-org/FirePress_Vapor.git
 [submodule "01_go/FirePress_Simply"]
 	path = 01_go/FirePress_Simply
 	url = https://github.com/firepress-org/FirePress_Simply
