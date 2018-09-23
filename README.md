@@ -30,10 +30,14 @@ cd 01_go && \
 
 **To add a new theme as a submodule**:
 
+This $GIT_URL is used as an example.
+
 ```
-git submodule add $GIT_URL
+GIT_URL="https://github.com/firepress-org/FirePress_Vapor.git"
+Under directory `01_go`
+git submodule add --force $GIT_URL
 git submodule update --init --recursive
-git commit
+git commit -m "Adding a new theme as submodule"
 git push
 ```
 
