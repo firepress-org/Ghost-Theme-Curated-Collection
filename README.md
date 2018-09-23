@@ -1,3 +1,7 @@
+
+# Ghost-Theme-Curated-Collection
+
+
 ## What is this?
 
 It’s a curation of open-source Ghost Themes (*a template if you prefer*) for Ghost. It’s a very **opiniated** classification. The question I ask myself is: **Would I recommand this theme to a friend or a client ?** If it’s not a « Hell yes! » kind of reaction, I move the theme I’m reviewing in the [03_no-go directory](https://github.com/firepress-org/Ghost-Theme-Curated-Collection-No-Go/tree/master/03_no-go).
@@ -9,12 +13,20 @@ This project is a **monorepo**. It means it’s an aggregation of existing proje
 
 ## Start here
 
-1. The most interesting directory is: [01_go](https://github.com/firepress-org/Ghost-Theme-Curated-Collection/tree/master/01_go).
+- Head over this directory: [01_go](https://github.com/firepress-org/Ghost-Theme-Curated-Collection/tree/master/01_go).
+- **Alternative** — You can also find FirePress’ themes using the [tag `firepress-ghost-theme`](https://github.com/topics/firepress-ghost-theme).
 
 
 ## Submodules
 
-This is a note to myself as I always strungle to use submodules.
+This is more a note to myself as I always strungle to use submodules.
+
+**To update submodules from parents projects**:
+
+```
+cd 01_go && \
+./update-submodules.sh
+```
 
 **To add a new theme as a submodule**:
 
@@ -23,14 +35,6 @@ git submodule add $GIT_URL
 git submodule update --init --recursive
 git commit
 git push
-```
-
-**To update submodules from parents projects**:
-
-```
-cd 01_go && \
-./update-submodules.sh && \
-echo "submodules are updated"
 ```
 
 
@@ -53,43 +57,44 @@ https://play-with-ghost.com/ghost-themes/firepress-vapor-for-barbershops/
 
 ## Contributing
 
-Thanks to the power of communities, this is where `1 + 1 = 3`.
+Here’s how I suggest you go about proposing a change to this project:
 
-1. Fork it
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Add the theme under directory `02_to_review`
+1. [Fork this project](https://help.github.com/articles/fork-a-repo/) to your account.
+2. [Create a branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) for the change you intend to make (i.e. `git checkout -b my-new-feature`)
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+5. [Submit a pull request](https://help.github.com/articles/about-pull-requests/) from your fork’s branch to our `master` branch.
+	- Explain why you’re making a change. Even if it seems self-evident, please take a sentence or two to tell us why your change or addition should happen. It’s especially helpful to articulate why this change applies to everyone who works with the applicable technology, rather than just you or your team.
+	- Please only modify one element per pull request. This helps keep pull requests and feedback focused on a specific project or technology.
 
   
-## Sources & Fork
+## Sources
 
-- This Git repo is available at:<br> https://github.com/firepress-org/Ghost-Theme-Curated-Collection
+- This Git repo is available at https://github.com/firepress-org/Ghost-Theme-Curated-Collection
 
 
-## License & Sources
+## License
 
-- This fork is released under the **GNU** [license](https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE).
-- View **MIT** license information at:<br>  https://ghost.org/license/ for the software.
+- This fork is under the **GNU** license. Details at https://github.com/pascalandy/GNU-GENERAL-PUBLIC-LICENSE
+- The Ghost’s software, is under the **MIT** license. Details at https://ghost.org/license/
 
 
 ## FirePress Hosting
 
-**At FirePress we do one thing and we do it with our whole heart: we host fully managed Ghost’s websites**. The idea behind FirePress is to empower freelancers and small organizations to be able to build an outstanding mobile-first website.
+At FirePress we do one thing and we do it with our whole heart: we host **fully managed Ghost’s websites**. The idea behind FirePress is to empower freelancers and small organizations to be able to build an outstanding mobile-first website. Start your [free trial here](https://play-with-ghost.com/ghost-themes/free-10-day-trial/).
 
-We also offer a **workshop** where participants ends up with a website/blog they can easily operate themselves. Details are coming soon. It is available in those cities:
+We offer **workshops** where participants ends up with a website/blog they can easily operate themselves. Details are coming soon. It is available in those cities:
 
 - Montréal - Canada
+- Québec City - Canada
 - Toronto - Canada
 - New-York - USA
-- Québec City - Canada
 
-Because we believe your website should speak up in your name, we consider our mission completed once your site has become [your impresario](https://play-with-ghost.com/ghost-themes/why-launching-your-next-website-with-firepress/). Start your [free trial here](https://play-with-ghost.com/ghost-themes/free-10-day-trial/).
+Because we believe your website should speak up in your name, we consider our mission completed once your site has become [your impresario](https://play-with-ghost.com/ghost-themes/why-launching-your-next-website-with-firepress/).
 
 
 ## Keep in touch
 
-- [Pascal Andy’s « now page »](https://pascalandy.com/blog/now/)
+- Pascal Andy’s [« now page »](https://pascalandy.com/blog/now/)
 - Follow me on [Twitter](https://twitter.com/askpascalandy)
 - Find more Ghost Themes on [play-with-ghost.com](https://play-with-ghost.com/)
