@@ -28,3 +28,6 @@
 [submodule "01_go/FirePress_Steam"]
 	path = 01_go/FirePress_Steam
 	url = https://github.com/firepress-org/FirePress_Steam.git
+[submodule "01_go/FirePress_Biron"]
+	path = 01_go/FirePress_Biron
+	url = https://github.com/firepress-org/FirePress_Biron.git
