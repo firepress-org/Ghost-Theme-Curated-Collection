@@ -33,7 +33,7 @@ cd 01_go && \
 This $GIT_URL is used as an example.
 
 ```
-GIT_URL="https://github.com/firepress-org/FirePress_Vapor.git"
+GIT_URL="https://github.com/firepress-org/FirePress_Biron.git"
 Under directory `01_go`
 git submodule add --force $GIT_URL
 git submodule update --init --recursive
